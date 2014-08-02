@@ -1,0 +1,7 @@
+{
+    "description": "Logic-less View/Mustache Module for the KORD Framework",
+    "require": {
+        "mustache/mustache": "~2.6.0",
+        "php": ">=5.3.0"
+    }
+}
