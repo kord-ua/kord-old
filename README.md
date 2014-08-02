@@ -1,6 +1,10 @@
+**CURRENT VERSION IS FOR EDUCATIONAL PURPOSES ONLY, DO NOT USE IT FOR PRODUCTION**
+
 # KORD PHP Framework
 
 KORD is an elegant, open source, and object oriented HMVC framework built using PHP5. It aims to be swift, secure, and small. KORD framework is initially based on Kohana framework, but contains a lot of new features.
+
+KORD framework is licensed under the BSD License. All original scripts (Kohana Framework, Zend Framework, phputf8 and other) are licensed under their original licenses.
 
 ## New features
 * Complete PSR-compatibility: PSR-0 and PSR-4 for classes autoload, PSR-1 and PSR-2 for coding style, PSR-3 for logging
