@@ -1,9 +1,0 @@
-v 1. I18n for TextSrc and DateSrc2
-  2. ???? (see 8) Review all exceptions for a new I18n messages format and Log messages format
-  3. Route directory still needed?
-  4. \KORD\Request\Client uses HTTP Cache (cache module). Include to main classes?
-  5. Duplication of htmlspecialchars and htmlentities in \KORD\HTML and Filters
-  6. Config ini and xml readers/writers
-  7. Writing errors with single quotes in text causes errors in log file
-v 8. Split two i18n variants - both should be supported
-  9. \KORD\Filtration\StripTagsSrc - filter unclosed tags, use DomDocument see (http://framework.zend.com/manual/2.3/en/modules/zend.filter.set.html#zend-filter-set-striptags-basic)
