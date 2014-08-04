@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
+ */
+
 namespace KORD\Filtration;
 
 class StripTagsSrc extends FilterAbstract

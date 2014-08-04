@@ -4,6 +4,8 @@
  * Interface for config writers
  *
  * Specifies the methods that a config writer must implement
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD\Config;

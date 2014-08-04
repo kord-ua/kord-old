@@ -1,8 +1,10 @@
 <?php
 
-namespace KORD\Validation;
+/**
+ * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
+ */
 
-use KORD\Arr;
+namespace KORD\Validation;
 
 class EmailSrc extends RuleAbstract
 {

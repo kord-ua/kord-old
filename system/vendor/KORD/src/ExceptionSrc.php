@@ -2,6 +2,8 @@
 
 /**
  * KORD exception class. Translates exceptions using the [I18n] class.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD;
@@ -102,7 +104,7 @@ class ExceptionSrc extends \Exception
      * Exception handler, logs the exception and generates a Response object
      * for display.
      *
-     * @uses    \Kohana\Exception::response
+     * @uses    \KORD\Exception::response
      * @param   \Exception  $e
      * @return  \KORD\Response
      */

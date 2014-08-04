@@ -39,6 +39,7 @@ Thus, multiple translators can be used within one application.
 
 ### I18n (KORD\I18n)
 * Based on [I18n_Plural](https://github.com/czukowski/I18n_Plural)
+* Multiple readers are supported
 
 ### Log (KORD\Log)
 * PSR-3 compatible
@@ -49,6 +50,9 @@ Thus, multiple translators can be used within one application.
 ### Route (KORD\Route and KORD\RouteRepository)
 * Initialized routes are now being stored in a separate class (repository)
 * Routes do not contain `directory` param (see KORD\Request)
+
+### Server (KORD\Server)
+* Contains methods to handle $_SERVER array
 
 ### UTF8 (KORD\UTF8)
 * `iconv()` and `$charset` are used in `UTF8::strlen`, `UTF8::strtolower` and `UTF8::strtoupper` for better encoding compatibility (used in filtration/validation)
@@ -66,6 +70,7 @@ Thus, multiple translators can be used within one application.
 
 ### ORM
 * Table columns are now being cached
+* Validation and filtration inside ORM is removed
 
 ## File structure
 / application - folder for application<br />

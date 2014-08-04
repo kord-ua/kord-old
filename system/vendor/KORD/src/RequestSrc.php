@@ -4,6 +4,7 @@
  * Request. Uses the [\KORD\Route] class to determine what
  * [\KORD\Controller] to send the request to.
  *
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD;
@@ -607,7 +608,7 @@ class RequestSrc implements \KORD\HTTP\Request
     }
 
     /**
-     * Returns whether this request is the initial request Kohana received.
+     * Returns whether this request is the initial request KORD received.
      * Can be used to test for sub requests.
      *
      *     if ( ! $request->isInitial())

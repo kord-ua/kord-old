@@ -25,6 +25,8 @@
  * Reference CLDR Version 21 (2012-03-01 03:27:30 GMT)
  * @see  http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html
  * @see  http://unicode.org/repos/cldr/trunk/common/supplemental/plurals.xml
+ * 
+ * @copyright  (c) 2012 Korney Czukowski
  */
 
 namespace KORD\I18n\Plural;

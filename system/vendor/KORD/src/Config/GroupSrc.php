@@ -7,6 +7,8 @@
  * This is the object returned from \KORD\Config::load
  *
  * Any modifications to configuration items should be done through an instance of this object
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD\Config;
@@ -31,7 +33,7 @@ class GroupSrc extends \ArrayObject
     protected $group_name = '';
 
     /**
-     * Constructs the group object.  Kohana_Config passes the config group
+     * Constructs the group object.  \KORD\Config passes the config group
      * and its config items to the object here.
      *
      * @param \KORD\Config  $instance "Owning" instance of \KORD\Config

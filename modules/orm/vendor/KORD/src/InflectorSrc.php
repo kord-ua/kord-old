@@ -10,6 +10,8 @@ use KORD\Inflector;
  * the context it is used in. For example, changing a word into a plural form.
  *
  * [!!] Inflection is only tested with English and will not work with other languages.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  *
  */
 abstract class InflectorSrc

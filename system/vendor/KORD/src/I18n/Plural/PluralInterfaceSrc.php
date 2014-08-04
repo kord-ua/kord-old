@@ -2,6 +2,8 @@
 
 /**
  * Interface for \KORD\I18n\Plural Rules
+ * 
+ * @copyright  (c) 2012 Korney Czukowski
  */
 
 namespace KORD\I18n\Plural;

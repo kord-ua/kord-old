@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * STDERR log writer. Writes out messages to STDERR.
+ *
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
+
 namespace KORD\Log;
 
 class StdErrSrc extends \KORD\Log\Writer

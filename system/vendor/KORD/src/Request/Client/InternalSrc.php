@@ -2,6 +2,8 @@
 
 /**
  * Request Client for internal execution
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD\Request\Client;

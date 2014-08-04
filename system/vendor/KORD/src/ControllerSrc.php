@@ -14,6 +14,8 @@
  * The controller action should add the output it creates to
  * `$this->response->body($output)`, typically in the form of a [\KORD\View], during the
  * "action" part of execution.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD;

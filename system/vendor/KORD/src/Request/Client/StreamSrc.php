@@ -10,6 +10,7 @@
  *       // In application bootstrap
  *       \KORD\Request\Client\External::$client = '\KORD\Request\Client\Stream';
  *
+ * @copyright  (c) 2007–2014 Kohana Team
  * @uses       [PHP Streams](http://php.net/manual/en/book.stream.php)
  */
 

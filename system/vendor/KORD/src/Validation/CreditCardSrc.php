@@ -1,8 +1,11 @@
 <?php
 
+/**
+ * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
+ */
+
 namespace KORD\Validation;
 
-use KORD\Arr;
 use KORD\Validation\CreditCard;
 use KORD\Validation\Exception;
 

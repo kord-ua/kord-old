@@ -5,6 +5,8 @@
  * Every route generates a regular expression which is used to match a URI
  * and a route. Routes may also contain keys which can be used to set the
  * controller, action, and parameters.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD;

@@ -16,6 +16,8 @@
  * [phputf8](http://phputf8.sourceforge.net/), this file is released under the LGPL.
  *
  * @license    http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
+ * @copyright  (c) 2005 Harry Fuecks
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD;

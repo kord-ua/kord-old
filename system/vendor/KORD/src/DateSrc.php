@@ -2,6 +2,9 @@
 
 /**
  * Date helper.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2012 Korney Czukowski
  */
 
 namespace KORD;

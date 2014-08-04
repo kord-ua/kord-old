@@ -13,6 +13,8 @@
  *     // With parameter replacement
  *     ___('{count} user is online', 1000, ['count' => 1000]);
  *
+ * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2012 Korney Czukowski
  */
 
 namespace KORD {

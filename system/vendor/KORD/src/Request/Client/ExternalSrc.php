@@ -23,6 +23,7 @@
  *       $request = \KORD\Request::factory('http://some.host.tld/foo/bar')
  *           ->client(\KORD\Request\Client\External::factory('\KORD\Request\Client\HTTP));
  *
+ * @copyright  (c) 2007–2014 Kohana Team
  * @uses       [PECL HTTP](http://php.net/manual/en/book.http.php)
  */
 

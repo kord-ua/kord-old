@@ -2,6 +2,8 @@
 
 /**
  * Array helper.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD;

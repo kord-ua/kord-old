@@ -4,6 +4,7 @@
  * [\KORD\Request\Client\External] Curl driver performs external requests using the
  * php-curl extention. This is the default driver for all external requests.
  *
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD\Request\Client;

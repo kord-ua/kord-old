@@ -2,6 +2,8 @@
 
 /**
  * I18n Plural rules factory
+ * 
+ * @copyright  (c) 2012 Korney Czukowski 
  */
 
 namespace KORD\I18n\Plural;

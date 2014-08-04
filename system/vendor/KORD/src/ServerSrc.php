@@ -3,6 +3,7 @@
 /**
  * Helps to handle $_SERVER superglobal array
  *
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD;
@@ -144,7 +145,6 @@ class ServerSrc
             } elseif (isset($_SERVER['REDIRECT_URL'])) {
                 $uri = $_SERVER['REDIRECT_URL'];
             } else {
-                // If you ever see this error, please report an issue at http://dev.kohanaphp.com/projects/kohana3/issues
                 // along with any relevant information about your web server setup. Thanks!
                 throw new Exception('Unable to detect the URI using PATH_INFO, REQUEST_URI, PHP_SELF or REDIRECT_URL');
             }

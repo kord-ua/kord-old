@@ -5,6 +5,8 @@
  *
  * You may get a database instance using `\KORD\Database::instance('name')` 
  * where name is the [config](database/config) group.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD;

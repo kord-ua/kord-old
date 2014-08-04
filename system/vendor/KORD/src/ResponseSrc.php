@@ -4,6 +4,8 @@
  * Response wrapper. Created as the result of any [Request] execution
  * or utility method (i.e. Redirect). Implements standard HTTP
  * response format.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD;
@@ -341,7 +343,7 @@ class ResponseSrc implements HTTPResponse
      *
      * Download a file that already exists:
      *
-     *     $request->sendFile('media/packages/kohana.zip');
+     *     $request->sendFile('media/packages/kord.zip');
      *
      * Download generated content as a file:
      *
@@ -535,7 +537,7 @@ class ResponseSrc implements HTTPResponse
         // Set the content length
         $this->headers('content-length', (string) $this->contentLength());
 
-        // If Kohana expose, set the user-agent
+        // If KORD expose, set the user-agent
         if (Core::$expose) {
             $this->headers('user-agent', Core::version());
         }

@@ -3,31 +3,22 @@
 /**
  * The directory in which your application specific resources are located.
  * The application directory must contain the bootstrap.php file.
- *
- * @link http://kohanaframework.org/guide/about.install#application
  */
 $application = 'application';
 
 /**
  * The directory in which your modules are located.
- *
- * @link http://kohanaframework.org/guide/about.install#modules
  */
 $modules = 'modules';
 
 /**
- * The directory in which the Kohana resources are located. The system
- * directory must contain the classes/kohana.php file.
- *
- * @link http://kohanaframework.org/guide/about.install#system
+ * The directory in which the KORD resources are located.
  */
 $system = 'system';
 
 /**
  * The default extension of resource files. If you change this, all resources
  * must be renamed to use the new extension.
- *
- * @link http://kohanaframework.org/guide/about.install#ext
  */
 define('EXT', '.php');
 
@@ -53,9 +44,7 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 
 /**
  * End of standard configuration! Changing any of the code below should only be
- * attempted by those with a working knowledge of Kohana internals.
- *
- * @link http://kohanaframework.org/guide/using.configuration
+ * attempted by those with a working knowledge of KORD internals.
  */
 // Set the full path to the docroot
 define('DOCROOT', realpath(__DIR__) . DS);

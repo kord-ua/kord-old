@@ -8,6 +8,8 @@
  *
  *     // SELECT CONCAT(first_name, last_name) AS full_name
  *     $query = \KORD\DB::select([DB::expr('CONCAT(first_name, last_name)'), 'full_name']);
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD\Database;

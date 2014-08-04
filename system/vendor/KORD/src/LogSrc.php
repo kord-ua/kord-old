@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Message logging with observer-based log writing.
+ *
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
+
 namespace KORD;
 
 use KORD\Log;

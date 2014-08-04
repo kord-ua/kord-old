@@ -7,6 +7,8 @@
  * - Locating files within the cascading filesystem
  * - Auto-loading and transparent extension of classes
  * - Variable and path debugging
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD;

@@ -43,7 +43,7 @@ spl_autoload_register(['\KORD\Core', 'autoLoad']);
 \KORD\Core::$autoloader->addNamespace('KORD', SYSPATH . 'vendor' . DS . 'KORD' . DS . 'src');
 
 /**
- * Enable the Kohana auto-loader for unserialization.
+ * Enable the KORD auto-loader for unserialization.
  *
  * @link http://www.php.net/manual/function.spl-autoload-call
  * @link http://www.php.net/manual/var.configuration#unserialize-callback-func
@@ -65,7 +65,7 @@ if (isset($_SERVER['SERVER_PROTOCOL'])) {
 }
 
 /**
- * Set \KORD\Core::$environment if a 'KOHANA_ENV' environment variable has been supplied.
+ * Set \KORD\Core::$environment if a 'KORD_ENV' environment variable has been supplied.
  *
  * Note: If you supply an invalid environment name, a PHP warning will be thrown
  * saying "Couldn't find constant \KORD\Core::<INVALID_ENV_NAME>"
@@ -75,7 +75,7 @@ if (isset($_SERVER['KORD_ENV'])) {
 }
 
 /**
- * Initialize Kohana, setting the default options.
+ * Initialize KORD, setting the default options.
  *
  * The following options are available:
  *

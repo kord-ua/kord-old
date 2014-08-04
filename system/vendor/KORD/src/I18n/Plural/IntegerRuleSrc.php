@@ -2,6 +2,8 @@
 
 /**
  * Common base for the plural rules with integer test.
+ * 
+ * @copyright  (c) 2012 Korney Czukowski
  */
 
 namespace KORD\I18n\Plural;

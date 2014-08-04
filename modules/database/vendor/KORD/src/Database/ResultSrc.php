@@ -2,6 +2,8 @@
 
 /**
  * Database result wrapper.  See [Results](/database/results) for usage and examples.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD\Database;

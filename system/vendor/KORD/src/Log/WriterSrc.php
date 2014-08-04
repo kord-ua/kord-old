@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Log writer abstract class. All [Log] writers must extend this class.
+ *
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
+
 namespace KORD\Log;
 
 use KORD\Date;

@@ -13,6 +13,8 @@
  * [`\KORD\DB::expr()`](#expr)     | [\KORD\Database\Expression]
  *
  * You pass the same parameters to these functions as you pass to the objects they return.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD;

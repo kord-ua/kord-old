@@ -4,6 +4,8 @@
  * Request Client. Processes a [\KORD\Request] and handles [\KORD\HTTP\Caching] if
  * available. Will usually return a [\KORD\Response] object as a result of the
  * request unless an unexpected error occurs.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD\Request;
@@ -216,7 +218,7 @@ abstract class ClientSrc
      * [!!] HTTP/1.1 specifies that a 302 redirect should be followed using the
      * original request method. However, the vast majority of clients and servers
      * get this wrong, with 302 widely used for 'POST - 302 redirect - GET' patterns.
-     * By default, Kohana's client is fully compliant with the HTTP spec. Some
+     * By default, KORD's client is fully compliant with the HTTP spec. Some
      * non-compliant third party sites may require that strict_redirect is set
      * false to force the client to switch to GET following a 302 response.
      *

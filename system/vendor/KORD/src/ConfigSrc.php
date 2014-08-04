@@ -9,6 +9,8 @@
  *
  * Directives from sources high in the sources list will override ones from those
  * below them.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD;

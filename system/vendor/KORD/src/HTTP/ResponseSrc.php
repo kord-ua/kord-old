@@ -4,6 +4,8 @@
  * A HTTP Response specific interface that adds the methods required
  * by HTTP responses. Over and above [\KORD\HTTP\Interaction], this
  * interface provides status.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD\HTTP;

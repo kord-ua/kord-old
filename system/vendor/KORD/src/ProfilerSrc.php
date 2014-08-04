@@ -5,7 +5,8 @@
  * have been collected, load the `profiler/stats` [View]:
  *
  *     echo \KORD\View::factory('profiler/stats');
- *
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD;

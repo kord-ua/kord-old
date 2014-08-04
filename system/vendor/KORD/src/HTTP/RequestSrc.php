@@ -4,6 +4,8 @@
  * A HTTP Request specific interface that adds the methods required
  * by HTTP requests. Over and above [\KORD\HTTP\Interaction], this
  * interface provides method, uri, get and post methods.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD\HTTP;

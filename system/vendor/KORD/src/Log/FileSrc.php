@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * File log writer. Writes out messages and stores them in a YYYY/MM directory.
+ *
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
+
 namespace KORD\Log;
 
 use KORD\Core;

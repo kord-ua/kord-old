@@ -1,5 +1,11 @@
 <?php
 
+/*
+ * Contains debugging and dumping tools.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
+
 namespace KORD;
 
 use KORD\Core;
@@ -196,8 +202,8 @@ class DebugSrc
      * replacing them with the plain text equivalents. Useful for debugging
      * when you want to display a shorter path.
      *
-     *     // Displays SYSPATH/classes/kohana.php
-     *     echo \KORD\Debug::path(\KORD\Core::findFile('classes', 'kord'));
+     *     // Displays SYSPATH/i18n/en.php
+     *     echo \KORD\Debug::path(\KORD\Core::findFile('i18n', 'en'));
      *
      * @param   string  $file   path to debug
      * @return  string

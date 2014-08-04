@@ -27,6 +27,8 @@
  *
  * Routes also provide a way to generate URIs (called "reverse routing"), which
  * makes them an extremely powerful and flexible way to generate internal links.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
  */
 
 namespace KORD;
