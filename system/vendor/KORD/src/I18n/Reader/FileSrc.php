@@ -2,8 +2,8 @@
 
 namespace KORD\I18n\Reader;
 
-use KORD\Arr;
 use KORD\Core;
+use KORD\Helper\Arr;
 
 class FileSrc implements ReaderInterface
 {

@@ -6,7 +6,7 @@
 
 namespace KORD;
 
-use KORD\HTML;
+use KORD\Helper\HTML;
 use KORD\Template;
 
 class TemplateSrc

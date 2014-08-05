@@ -6,7 +6,7 @@
 
 namespace KORD\Validation;
 
-use KORD\UTF8;
+use KORD\Helper\UTF8;
 use KORD\Validation\Exception;
 
 class StringLengthSrc extends RuleAbstract

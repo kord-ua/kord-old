@@ -2,7 +2,7 @@
 
 namespace KORD\Validation\Barcode;
 
-use KORD\UTF8;
+use KORD\Helper\UTF8;
 
 /**
  * @todo Test this adapter

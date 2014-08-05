@@ -15,12 +15,12 @@
 
 namespace KORD;
 
-use KORD\Arr;
 use KORD\Config\Group as ConfigGroup;
 use KORD\Config\ReaderSrc as ConfigReaderSrc;
 use KORD\Config\SourceSrc as ConfigSourceSrc;
 use KORD\Config\WriterSrc as ConfigWriterSrc;
 use KORD\Exception;
+use KORD\Helper\Arr;
 
 class ConfigSrc
 {

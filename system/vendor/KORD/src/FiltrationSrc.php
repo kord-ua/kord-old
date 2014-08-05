@@ -2,10 +2,10 @@
 
 namespace KORD;
 
-use KORD\Arr;
 use KORD\Core;
 use KORD\Filtration;
 use KORD\Filtration\FilterInterface;
+use KORD\Helper\Arr;
 
 class FiltrationSrc
 {

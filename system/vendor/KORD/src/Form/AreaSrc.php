@@ -2,9 +2,9 @@
 
 namespace KORD\Form;
 
-use KORD\Arr;
 use KORD\Exception;
 use KORD\Form\Element;
+use KORD\Helper\Arr;
 
 class AreaSrc
 {

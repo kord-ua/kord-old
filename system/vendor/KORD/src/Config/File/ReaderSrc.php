@@ -9,9 +9,9 @@
 
 namespace KORD\Config\File;
 
-use KORD\Arr;
 use KORD\Config\ReaderSrc as ConfigReaderSrc;
 use KORD\Core;
+use KORD\Helper\Arr;
 
 class ReaderSrc implements ConfigReaderSrc
 {

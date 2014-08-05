@@ -7,7 +7,7 @@
 namespace KORD\Filtration;
 
 use KORD\Core;
-use KORD\UTF8;
+use KORD\Helper\UTF8;
 
 class AlnumSrc extends FilterAbstract
 {

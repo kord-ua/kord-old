@@ -8,7 +8,7 @@
 
 namespace KORD\Log;
 
-use KORD\Date;
+use KORD\Helper\Date;
 use KORD\Log\Level as LogLevel;
 use KORD\Log\Writer as LogWriter;
 

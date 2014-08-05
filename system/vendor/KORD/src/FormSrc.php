@@ -2,9 +2,9 @@
 
 namespace KORD;
 
-use KORD\Arr;
 use KORD\Filtration;
 use KORD\Form\Area;
+use KORD\Helper\Arr;
 use KORD\Validation;
 
 class FormSrc

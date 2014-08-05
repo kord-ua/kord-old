@@ -21,7 +21,7 @@ is now equivalent to
 `Core::$i18n->translate('Translate me')`.
 Thus, multiple translators can be used within one application.
 
-### Date (KORD\Date)
+### Date (KORD\Helper\Date)
 * `Date::fuzzySpan()` and `Date::format()` are now internationalized. Based on [I18n_Plural](https://github.com/czukowski/I18n_Plural)
 
 ### Exception (KORD\Exception)
@@ -47,14 +47,14 @@ Thus, multiple translators can be used within one application.
 ### Request (KORD\Request)
 * Kohana Request `directory` property is deprecated as namespaces are now being used
 
-### Route (KORD\Route and KORD\RouteRepository)
+### Route (KORD\Route and KORD\Route\Repository)
 * Initialized routes are now being stored in a separate class (repository)
 * Routes do not contain `directory` param (see KORD\Request)
 
-### Server (KORD\Server)
+### Server (KORD\Helper\Server)
 * Contains methods to handle $_SERVER array
 
-### UTF8 (KORD\UTF8)
+### UTF8 (KORD\Helper\UTF8)
 * `iconv()` and `$charset` are used in `UTF8::strlen`, `UTF8::strtolower` and `UTF8::strtoupper` for better encoding compatibility (used in filtration/validation)
 * Three separate functions to check if unicode (`unicodeEnabled()`) and mbstring (`mbstringEnabled()`) are enabled and if encoding is upported by mbstring (`mbstringEncodingSupported(...)`)
 
@@ -86,7 +86,6 @@ Thus, multiple translators can be used within one application.
 / system / config<br />
 / system / hostname - hostnames for Hostname validator<br />
 / system / i18n - translations<br />
-/ system / utf8 - utf8 non-mbstring functions (used in KORD\UTF8)<br />
 / system / vendor - folder with KORD classes and 3rd party classes<br />
 / system / vendor / KORD - folder with KORD classes<br />
 / system / vendor / KORD / application - KORD classes that can be copied into `/application/vendor/KORD` folder and customized<br />

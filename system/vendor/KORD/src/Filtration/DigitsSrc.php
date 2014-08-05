@@ -6,7 +6,7 @@
 
 namespace KORD\Filtration;
 
-use KORD\UTF8;
+use KORD\Helper\UTF8;
 
 class DigitsSrc extends FilterAbstract
 {

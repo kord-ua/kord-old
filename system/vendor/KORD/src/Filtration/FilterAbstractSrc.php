@@ -6,8 +6,8 @@
 
 namespace KORD\Filtration;
 
-use KORD\Arr;
 use KORD\Filtration\Exception;
+use KORD\Helper\Arr;
 
 abstract class FilterAbstractSrc implements \KORD\Filtration\FilterInterface
 {

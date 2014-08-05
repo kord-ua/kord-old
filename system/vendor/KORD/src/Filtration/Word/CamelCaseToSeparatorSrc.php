@@ -6,7 +6,7 @@
 
 namespace KORD\Filtration\Word;
 
-use KORD\UTF8;
+use KORD\Helper\UTF8;
 
 class CamelCaseToSeparatorSrc extends WordFilterAbstract
 {

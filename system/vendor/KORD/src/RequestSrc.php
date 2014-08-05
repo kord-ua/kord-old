@@ -9,9 +9,12 @@
 
 namespace KORD;
 
-use KORD\Arr;
-use KORD\Cookie;
 use KORD\Core;
+use KORD\Exception as RequestException;
+use KORD\Helper\Arr;
+use KORD\Helper\Cookie;
+use KORD\Helper\Server;
+use KORD\Helper\URL;
 use KORD\HTTP;
 use KORD\HTTP\Exception as HTTPException;
 use KORD\HTTP\Header as HTTPHeader;
@@ -20,11 +23,8 @@ use KORD\Request;
 use KORD\Request\Client as RequestClient;
 use KORD\Request\Client\External as RequestClientExternal;
 use KORD\Request\Client\Internal as RequestClientInternal;
-use KORD\Exception as RequestException;
 use KORD\Route;
-use KORD\RouteRepository;
-use KORD\Server;
-use KORD\URL;
+use KORD\Route\Repository;
 
 class RequestSrc implements \KORD\HTTP\Request
 {
@@ -151,7 +151,7 @@ class RequestSrc implements \KORD\HTTP\Request
     public static function process(Request $request, $routes = null)
     {
         // Load routes
-        $routes = (empty($routes)) ? RouteRepository::getAll() : $routes;
+        $routes = (empty($routes)) ? Repository::getAll() : $routes;
         $params = null;
 
         foreach ($routes as $name => $route) {
@@ -277,7 +277,7 @@ class RequestSrc implements \KORD\HTTP\Request
      * @param   bool    $allow_external   Allow external requests? (deprecated in 3.3)
      * @param   array   $injected_routes  An array of routes to use, for testing
      * @return  void
-     * @uses    \KORD\RouteRepository::getAll
+     * @uses    \KORD\Route\Repository::getAll
      * @uses    \KORD\Route::matches
      */
     public function __construct($uri, $client_params = [], $allow_external = true, $injected_routes = [])
@@ -364,12 +364,12 @@ class RequestSrc implements \KORD\HTTP\Request
     /**
      * Create a URL string from the current request. This is a shortcut for:
      *
-     *     echo \KORD\URL::site($this->request->uri(), $protocol);
+     *     echo \KORD\Helper\URL::site($this->request->uri(), $protocol);
      *
      * @param   array    $params    URI parameters
      * @param   mixed    $protocol  protocol string or Request object
      * @return  string
-     * @uses    \KORD\URL::site
+     * @uses    \KORD\Helper\URL::site
      */
     public function url($protocol = null)
     {
@@ -581,7 +581,7 @@ class RequestSrc implements \KORD\HTTP\Request
                 }
 
                 // Store the action
-                $this->action = (isset($params['action'])) ? $params['action'] : RouteRepository::$default_action;
+                $this->action = (isset($params['action'])) ? $params['action'] : Repository::$default_action;
 
                 // These are accessible as public vars and can be overloaded
                 unset($params['controller'], $params['action'], $params['namespace']);
@@ -863,7 +863,7 @@ class RequestSrc implements \KORD\HTTP\Request
      * @param   mixed   $key    Key or key value pairs to set
      * @param   string  $value  Value to set to a key
      * @return  mixed
-     * @uses    \KORD\Arr::path
+     * @uses    \KORD\Helper\Arr::path
      */
     public function query($key = null, $value = null)
     {
@@ -894,7 +894,7 @@ class RequestSrc implements \KORD\HTTP\Request
      * @param   mixed  $key    Key or key value pairs to set
      * @param   string $value  Value to set to a key
      * @return  mixed
-     * @uses    \KORD\Arr::path
+     * @uses    \KORD\Helper\Arr::path
      */
     public function post($key = null, $value = null)
     {

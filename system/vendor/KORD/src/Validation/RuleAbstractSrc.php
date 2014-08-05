@@ -6,7 +6,7 @@
 
 namespace KORD\Validation;
 
-use KORD\Arr;
+use KORD\Helper\Arr;
 use KORD\Validation\Exception;
 
 abstract class RuleAbstractSrc implements RuleInterface

@@ -135,7 +135,7 @@ if (isset($_SERVER['KORD_ENV'])) {
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
-\KORD\RouteRepository::set('default', '(<controller>(/<action>(/<id>)))')
+\KORD\Route\Repository::set('default', '(<controller>(/<action>(/<id>)))')
         ->defaults([
             'namespace' => 'Application\Controller',
             'controller' => 'Welcome',

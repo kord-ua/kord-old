@@ -10,7 +10,7 @@ namespace KORD;
 
 use KORD\Core;
 use KORD\Debug;
-use KORD\UTF8;
+use KORD\Helper\UTF8;
 
 class DebugSrc
 {

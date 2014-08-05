@@ -8,8 +8,8 @@
 
 namespace KORD;
 
-use KORD\Arr;
 use KORD\Core;
+use KORD\Helper\Arr;
 use KORD\Profiler;
 use KORD\Validation\RuleAbstract;
 

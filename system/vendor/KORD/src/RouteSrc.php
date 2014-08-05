@@ -11,10 +11,10 @@
 
 namespace KORD;
 
-use KORD\Arr;
 use KORD\Exception;
+use KORD\Helper\Arr;
 use KORD\Request;
-use KORD\RouteRepository;
+use KORD\Route\Repository;
 
 class RouteSrc
 {
@@ -45,7 +45,7 @@ class RouteSrc
 
     /**
      * Creates a new route. Sets the URI and regular expressions for keys.
-     * Routes should always be created with [\KORD\RouteRepository::set] or 
+     * Routes should always be created with [\KORD\Route\Repository::set] or 
      * they will not be properly stored.
      *
      *     $route = new \KORD\Route($uri, $regex);
@@ -56,7 +56,7 @@ class RouteSrc
      * @param   string  $uri    route URI pattern
      * @param   array   $regex  key patterns
      * @return  void
-     * @uses    \KORD\RouteRepository::compile
+     * @uses    \KORD\Route\Repository::compile
      */
     public function __construct($uri = null, $regex = null)
     {
@@ -74,7 +74,7 @@ class RouteSrc
         }
 
         // Store the compiled regex locally
-        $this->route_regex = \KORD\RouteRepository::compile($uri, $regex);
+        $this->route_regex = Repository::compile($uri, $regex);
     }
 
     /**
@@ -223,7 +223,7 @@ class RouteSrc
      */
     public function isExternal()
     {
-        return !in_array(Arr::get($this->defaults, 'host', false), RouteRepository::$localhosts);
+        return !in_array(Arr::get($this->defaults, 'host', false), Repository::$localhosts);
     }
 
     /**
@@ -239,8 +239,8 @@ class RouteSrc
      * @param   array   $params URI parameters
      * @return  string
      * @throws  \KORD\Exception
-     * @uses    \KORD\RouteRepository::REGEX_GROUP
-     * @uses    \KORD\RouteRepository::REGEX_KEY
+     * @uses    \KORD\Route\Repository::REGEX_GROUP
+     * @uses    \KORD\Route\Repository::REGEX_KEY
      */
     public function uri(array $params = null)
     {
@@ -257,7 +257,7 @@ class RouteSrc
         $compile = function ($portion, $required) use (&$compile, $defaults, $params) {
             $missing = [];
 
-            $pattern = '#(?:' . RouteRepository::REGEX_KEY . '|' . RouteRepository::REGEX_GROUP . ')#';
+            $pattern = '#(?:' . Repository::REGEX_KEY . '|' . Repository::REGEX_GROUP . ')#';
             $result = preg_replace_callback($pattern, function ($matches) use (&$compile, $defaults, &$missing, $params, &$required) {
                 if ($matches[0][0] === '<') {
                     // Parameter, unwrapped
@@ -317,7 +317,7 @@ class RouteSrc
 
             if (strpos($host, '://') === false) {
                 // Use the default defined protocol
-                $host = RouteRepository::$default_protocol . $host;
+                $host = Repository::$default_protocol . $host;
             }
 
             // Clean up the host and prepend it to the URI

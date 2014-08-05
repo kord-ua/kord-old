@@ -7,7 +7,7 @@
 namespace KORD\Validation;
 
 use KORD\Core;
-use KORD\UTF8;
+use KORD\Helper\UTF8;
 use KORD\Validation\Hostname;
 
 class HostnameSrc extends RuleAbstract

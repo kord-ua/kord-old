@@ -3,7 +3,7 @@
 namespace KORD;
 
 use KORD\Core;
-use KORD\HTML;
+use KORD\Helper\HTML;
 use KORD\Mustache;
 use KORD\Mustache\Loader as MustacheLoader;
 use KORD\Template;

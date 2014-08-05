@@ -9,9 +9,8 @@
 
 namespace KORD\HTTP\Exception;
 
-use KORD\Core;
 use KORD\Exception;
-use KORD\URL;
+use KORD\Helper\URL;
 
 abstract class RedirectSrc extends \KORD\HTTP\Exception\Expected
 {
@@ -29,7 +28,7 @@ abstract class RedirectSrc extends \KORD\HTTP\Exception\Expected
 
         if (strpos($uri, '://') === false) {
             // Make the URI into a URL
-            $uri = URL::site($uri, true, !empty(Core::$index_file));
+            $uri = URL::site($uri, true, !empty(URL::$index_file));
         }
 
         $this->headers('Location', $uri);

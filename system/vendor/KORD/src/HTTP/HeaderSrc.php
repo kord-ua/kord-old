@@ -12,11 +12,11 @@
 namespace KORD\HTTP;
 
 use KORD\Core;
-use KORD\Cookie;
+use KORD\Helper\Cookie;
+use KORD\Helper\Text;
 use KORD\HTTP\Header as HTTPHeader;
 use KORD\HTTP\Response as HTTPResponse;
 use KORD\Response as KResponse;
-use KORD\Text;
 
 class HeaderSrc extends \ArrayObject
 {
