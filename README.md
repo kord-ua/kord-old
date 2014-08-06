@@ -14,6 +14,21 @@ KORD framework is licensed under the BSD License. All original scripts (Kohana F
 
 ## Core classes changes
 
+### Helpers
+
+#### Date (KORD\Helper\Date)
+* `Date::fuzzySpan()` and `Date::format()` are now internationalized. Based on [I18n_Plural](https://github.com/czukowski/I18n_Plural)
+
+#### Num (KORD\Helper\Num)
+* `ordinal(...)` and `round(...)` methods are deprecated and removed
+
+#### Server (KORD\Helper\Server)
+* Contains methods to handle $_SERVER array
+
+#### UTF8 (KORD\Helper\UTF8)
+* `iconv()` and `$charset` are used in `UTF8::strlen`, `UTF8::strtolower` and `UTF8::strtoupper` for better encoding compatibility (used in filtration/validation)
+* Three separate functions to check if unicode (`unicodeEnabled()`) and mbstring (`mbstringEnabled()`) are enabled and if encoding is upported by mbstring (`mbstringEncodingSupported(...)`)
+
 ### Core (KORD\Core)
 * I18n object is now being attached to Core and the following code:
 `__('Translate me')`
@@ -21,15 +36,13 @@ is now equivalent to
 `Core::$i18n->translate('Translate me')`.
 Thus, multiple translators can be used within one application.
 
-### Date (KORD\Helper\Date)
-* `Date::fuzzySpan()` and `Date::format()` are now internationalized. Based on [I18n_Plural](https://github.com/czukowski/I18n_Plural)
-
 ### Exception (KORD\Exception)
 * Exception placeholders are now with braces around context keys instead of colons (e.g. `throw new Exception("This {var} is invalid", ['var' => $var])` instead of `throw new Exception("This :var is invalid", [':var' => $var])`) according to section 1.2 of PSR-3
 
 ### Filtration (KORD\Filtration)
 * Based on Zend Framework filters
 * Multiple filters for one value are supported
+* Filtration of both scalar values and arrays (e.g. multiselects) is now supported
 
 ### Form (KORD\Form)
 * Contains areas (e.g. tabs), each area contains elements (inputs, selects, buttons etc.). 
@@ -45,28 +58,22 @@ Thus, multiple translators can be used within one application.
 * PSR-3 compatible
 
 ### Request (KORD\Request)
-* Kohana Request `directory` property is deprecated as namespaces are now being used
+* Kohana Request `directory` property is deprecated and removed as namespaces are now being used
 
 ### Route (KORD\Route and KORD\Route\Repository)
 * Initialized routes are now being stored in a separate class (repository)
 * Routes do not contain `directory` param (see KORD\Request)
 
-### Server (KORD\Helper\Server)
-* Contains methods to handle $_SERVER array
-
-### UTF8 (KORD\Helper\UTF8)
-* `iconv()` and `$charset` are used in `UTF8::strlen`, `UTF8::strtolower` and `UTF8::strtoupper` for better encoding compatibility (used in filtration/validation)
-* Three separate functions to check if unicode (`unicodeEnabled()`) and mbstring (`mbstringEnabled()`) are enabled and if encoding is upported by mbstring (`mbstringEncodingSupported(...)`)
-
 ### Validation (KORD\Validation)
 * Validation rules are based on Zend Framework validators
 * Rules are combined into chains, chains can be broken on first validation rule check failure (one error message), or all validation rules will be checked (one error message per failed validation rule)
+* Validation of both scalar values and arrays (e.g. multiselects) is now supported
 
 ## Modules
 
 ### Database
-* MySQL driver is deprecated. PDO and MySQLi drivers are available.
-* `list_tables` and `list_columns` methods are deprecated as they are not supported by PDO
+* MySQL driver is deprecated and removed. PDO and MySQLi drivers are available.
+* `list_tables` and `list_columns` methods are deprecated and removed as they are not supported by PDO
 
 ### ORM
 * Table columns are now being cached
