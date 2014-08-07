@@ -2,9 +2,6 @@
 
 namespace KORD;
 
-use KORD\Core;
-use KORD\Inflector;
-
 /**
  * Inflector helper class. Inflection is changing the form of a word based on
  * the context it is used in. For example, changing a word into a plural form.
@@ -12,7 +9,6 @@ use KORD\Inflector;
  * [!!] Inflection is only tested with English and will not work with other languages.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
- *
  */
 abstract class InflectorSrc
 {
@@ -25,12 +21,102 @@ abstract class InflectorSrc
     /**
      * @var  array  uncountable words
      */
-    protected static $uncountable;
+    public static $uncountable = [
+        'access',
+        'advice',
+        'aircraft',
+        'art',
+        'baggage',
+        'bison',
+        'dances',
+        'deer',
+        'equipment',
+        'fish',
+        'fuel',
+        'furniture',
+        'heat',
+        'honey',
+        'homework',
+        'impatience',
+        'information',
+        'knowledge',
+        'luggage',
+        'media',
+        'money',
+        'moose',
+        'music',
+        'news',
+        'patience',
+        'progress',
+        'pollution',
+        'research',
+        'rice',
+        'salmon',
+        'sand',
+        'series',
+        'sheep',
+        'sms',
+        'spam',
+        'species',
+        'staff',
+        'swine',
+        'toothpaste',
+        'traffic',
+        'understanding',
+        'water',
+        'weather',
+        'work',
+    ];
 
     /**
      * @var  array  irregular words
      */
-    protected static $irregular;
+    public static $irregular = [
+        'appendix' => 'appendices',
+        'cactus' => 'cacti',
+        'calf' => 'calves',
+        'child' => 'children',
+        'crisis' => 'crises',
+        'criterion' => 'criteria',
+        'curriculum' => 'curricula',
+        'diagnosis' => 'diagnoses',
+        'elf' => 'elves',
+        'ellipsis' => 'ellipses',
+        'foot' => 'feet',
+        'goose' => 'geese',
+        'hero' => 'heroes',
+        'hoof' => 'hooves',
+        'hypothesis' => 'hypotheses',
+        'is' => 'are',
+        'knife' => 'knives',
+        'leaf' => 'leaves',
+        'life' => 'lives',
+        'loaf' => 'loaves',
+        'man' => 'men',
+        'mouse' => 'mice',
+        'nucleus' => 'nuclei',
+        'oasis' => 'oases',
+        'octopus' => 'octopi',
+        'ox' => 'oxen',
+        'paralysis' => 'paralyses',
+        'parenthesis' => 'parentheses',
+        'person' => 'people',
+        'phenomenon' => 'phenomena',
+        'potato' => 'potatoes',
+        'quiz' => 'quizzes',
+        'radius' => 'radii',
+        'scarf' => 'scarves',
+        'stimulus' => 'stimuli',
+        'syllabus' => 'syllabi',
+        'synthesis' => 'syntheses',
+        'thief' => 'thieves',
+        'tooth' => 'teeth',
+        'was' => 'were',
+        'wharf' => 'wharves',
+        'wife' => 'wives',
+        'woman' => 'women',
+        'release' => 'releases',
+    ];
 
     /**
      * Checks if a word is defined as uncountable. An uncountable word has a
@@ -40,22 +126,14 @@ abstract class InflectorSrc
      *     \KORD\Inflector::uncountable('cat');  // false
      *
      * If you find a word is being pluralized improperly, it has probably not
-     * been defined as uncountable in `config/inflector.php`.
+     * been defined as uncountable.
      *
      * @param   string  $str    word to check
      * @return  boolean
      */
     public static function uncountable($str)
     {
-        if (Inflector::$uncountable === null) {
-            // Cache uncountables
-            Inflector::$uncountable = Core::$config->load('inflector')->uncountable;
-
-            // Make uncountables mirrored
-            Inflector::$uncountable = array_combine(Inflector::$uncountable, Inflector::$uncountable);
-        }
-
-        return isset(Inflector::$uncountable[strtolower($str)]);
+        return in_array(strtolower($str), Inflector::$uncountable);
     }
 
     /**
@@ -96,11 +174,6 @@ abstract class InflectorSrc
 
         if (Inflector::uncountable($str)) {
             return Inflector::$cache[$key] = $str_part1 . $str;
-        }
-
-        if (empty(Inflector::$irregular)) {
-            // Cache irregular words
-            Inflector::$irregular = Core::$config->load('inflector')->irregular;
         }
 
         if ($irregular = array_search($str, Inflector::$irregular)) {
@@ -163,11 +236,6 @@ abstract class InflectorSrc
 
         if (Inflector::uncountable($str)) {
             return Inflector::$cache[$key] = $str_part1 . $str;
-        }
-
-        if (empty(Inflector::$irregular)) {
-            // Cache irregular words
-            Inflector::$irregular = Core::$config->load('inflector')->irregular;
         }
 
         if (isset(Inflector::$irregular[$str])) {

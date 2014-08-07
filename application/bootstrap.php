@@ -75,6 +75,13 @@ if (isset($_SERVER['KORD_ENV'])) {
 }
 
 /**
+ * Init default Encrypt instance
+ * 
+ * IMPORTANT: Change the key for every new application!!!
+ */
+\KORD\Encrypt::setInstance(null, ['key' => 'foobarkey']);
+
+/**
  * Initialize KORD, setting the default options.
  *
  * The following options are available:

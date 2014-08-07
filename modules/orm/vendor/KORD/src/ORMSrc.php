@@ -19,7 +19,7 @@ use KORD\DB;
 use KORD\Filtration\Word\CamelCaseToUnderscore;
 use KORD\Filtration\Word\UnderscoreToCamelCase;
 use KORD\Helper\Arr;
-use KORD\Inflector;
+use KORD\Helper\Inflector;
 use KORD\ORM\Cache as ORMCache;
 use KORD\ORM\Exception as ORMException;
 

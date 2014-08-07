@@ -1,5 +1,5 @@
 <?php
 
-namespace KORD;
+namespace KORD\Helper;
 
 abstract class Inflector extends InflectorSrc {}
