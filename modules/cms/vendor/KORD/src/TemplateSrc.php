@@ -1,14 +1,13 @@
 <?php
 
-/**
- * Template singleton
- */
-
 namespace KORD;
 
 use KORD\Helper\HTML;
 use KORD\Template;
 
+/**
+ * Template singleton
+ */
 class TemplateSrc
 {
 

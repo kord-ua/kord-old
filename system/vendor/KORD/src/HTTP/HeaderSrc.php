@@ -1,14 +1,5 @@
 <?php
 
-/**
- * The \KORD\HTTP\Header class provides an Object-Orientated interface
- * to HTTP headers. This can parse header arrays returned from the
- * PHP functions `apache_request_headers()` or the `http_parse_headers()`
- * function available within the PECL HTTP library.
- * 
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD\HTTP;
 
 use KORD\Core;
@@ -18,6 +9,14 @@ use KORD\HTTP\Header as HTTPHeader;
 use KORD\HTTP\Response as HTTPResponse;
 use KORD\Response as KResponse;
 
+/**
+ * The \KORD\HTTP\Header class provides an Object-Orientated interface
+ * to HTTP headers. This can parse header arrays returned from the
+ * PHP functions `apache_request_headers()` or the `http_parse_headers()`
+ * function available within the PECL HTTP library.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 class HeaderSrc extends \ArrayObject
 {
 

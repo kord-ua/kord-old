@@ -1,5 +1,14 @@
 <?php
 
+namespace KORD;
+
+use KORD\Config\Group as ConfigGroup;
+use KORD\Config\ReaderSrc as ConfigReaderSrc;
+use KORD\Config\SourceSrc as ConfigSourceSrc;
+use KORD\Config\WriterSrc as ConfigWriterSrc;
+use KORD\Exception;
+use KORD\Helper\Arr;
+
 /**
  * Wrapper for configuration arrays. Multiple configuration readers can be
  * attached to allow loading configuration from files, database, etc.
@@ -12,16 +21,6 @@
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD;
-
-use KORD\Config\Group as ConfigGroup;
-use KORD\Config\ReaderSrc as ConfigReaderSrc;
-use KORD\Config\SourceSrc as ConfigSourceSrc;
-use KORD\Config\WriterSrc as ConfigWriterSrc;
-use KORD\Exception;
-use KORD\Helper\Arr;
-
 class ConfigSrc
 {
 

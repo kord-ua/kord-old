@@ -1,5 +1,14 @@
 <?php
 
+namespace KORD\Request\Client;
+
+use KORD\Core;
+use KORD\Profiler;
+use KORD\Request;
+use KORD\Request\Client\External as RequestClientExternal;
+use KORD\Request\Exception as RequestException;
+use KORD\Response;
+
 /**
  * [\KORD\Request\Client\External] provides a wrapper for all external request
  * processing. This class should be extended by all drivers handling external
@@ -26,16 +35,6 @@
  * @copyright  (c) 2007–2014 Kohana Team
  * @uses       [PECL HTTP](http://php.net/manual/en/book.http.php)
  */
-
-namespace KORD\Request\Client;
-
-use KORD\Core;
-use KORD\Profiler;
-use KORD\Request;
-use KORD\Request\Client\External as RequestClientExternal;
-use KORD\Request\Exception as RequestException;
-use KORD\Response;
-
 abstract class ExternalSrc extends \KORD\Request\Client
 {
 

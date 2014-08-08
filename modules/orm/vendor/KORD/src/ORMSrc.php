@@ -1,17 +1,5 @@
 <?php
 
-/**
- * [Object Relational Mapping][ref-orm] (ORM) is a method of abstracting database
- * access to standard PHP calls. All table rows are represented as model objects,
- * with object properties representing row data. ORM in KORD generally follows
- * the [Active Record][ref-act] pattern.
- *
- * [ref-orm]: http://wikipedia.org/wiki/Object-relational_mapping
- * [ref-act]: http://wikipedia.org/wiki/Active_record
- *
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD;
 
 use KORD\Database;
@@ -23,6 +11,17 @@ use KORD\Helper\Inflector;
 use KORD\ORM\Cache as ORMCache;
 use KORD\ORM\Exception as ORMException;
 
+/**
+ * [Object Relational Mapping][ref-orm] (ORM) is a method of abstracting database
+ * access to standard PHP calls. All table rows are represented as model objects,
+ * with object properties representing row data. ORM in KORD generally follows
+ * the [Active Record][ref-act] pattern.
+ *
+ * [ref-orm]: http://wikipedia.org/wiki/Object-relational_mapping
+ * [ref-act]: http://wikipedia.org/wiki/Active_record
+ *
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 abstract class ORMSrc implements \Serializable
 {
 

@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Request Client for internal execution
- * 
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD\Request\Client;
 
 use KORD\Core;
@@ -15,6 +9,11 @@ use KORD\Profiler;
 use KORD\Request;
 use KORD\Response;
 
+/**
+ * Request Client for internal execution
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 class InternalSrc extends \KORD\Request\Client
 {
 

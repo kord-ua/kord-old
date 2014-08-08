@@ -1,5 +1,7 @@
 <?php
 
+namespace KORD;
+
 /**
  * The Encrypt library provides two-way encryption of text and binary strings
  * using the [Mcrypt](http://php.net/mcrypt) extension, which consists of three
@@ -20,9 +22,6 @@
  *
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD;
-
 class EncryptSrc
 {
 
@@ -77,12 +76,11 @@ class EncryptSrc
     }
 
     /**
-     * Returns an instance of Encrypt. An encryption key must be
-     * provided in your "encrypt" configuration file.
+     * Returns an instance of Encrypt.
      *
      *     $encrypt = Encrypt::getInstance();
      *
-     * @param   string  $name   configuration group name
+     * @param   string  $name   Encrypt instance name
      * @return  Encrypt
      */
     public static function getInstance($name = null)

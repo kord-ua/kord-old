@@ -1,16 +1,5 @@
 <?php
 
-/**
- * Contains the most low-level helpers methods in KORD:
- *
- * - Environment initialization
- * - Locating files within the cascading filesystem
- * - Auto-loading and transparent extension of classes
- * - Variable and path debugging
- * 
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD {
 
     use KORD\Config;
@@ -22,6 +11,16 @@ namespace KORD {
     use KORD\Log;
     use KORD\Profiler;
 
+    /**
+    * Contains the most low-level helpers methods in KORD:
+    *
+    * - Environment initialization
+    * - Locating files within the cascading filesystem
+    * - Auto-loading and transparent extension of classes
+    * - Variable and path debugging
+    * 
+    * @copyright  (c) 2007–2014 Kohana Team
+    */
     class CoreSrc
     {
 

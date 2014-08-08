@@ -1,14 +1,13 @@
 <?php
 
+namespace KORD\Helper;
+
 /**
  * Number helper class. Provides additional formatting methods that for working
  * with numbers.
  *
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Helper;
-
 class NumSrc
 {
 

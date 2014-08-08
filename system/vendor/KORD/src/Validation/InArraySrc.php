@@ -1,9 +1,5 @@
 <?php
 
-/**
- * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
- */
-
 namespace KORD\Validation;
 
 use RecursiveArrayIterator;
@@ -11,6 +7,9 @@ use RecursiveIteratorIterator;
 use KORD\Validation\Exception;
 use KORD\Validation\InArray;
 
+/**
+ * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
+ */
 class InArraySrc extends RuleAbstract
 {
     // Type of Strict check

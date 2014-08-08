@@ -1,5 +1,14 @@
 <?php
 
+namespace KORD;
+
+use KORD\Exception;
+use KORD\HTTP\Exception as HTTPException;
+use KORD\HTTP\Exception\Redirect as HTTPExceptionRedirect;
+use KORD\HTTP\Header as HTTPHeader;
+use KORD\Request;
+use KORD\Response;
+
 /**
  * Contains the most low-level helpers methods in KORD:
  *
@@ -10,16 +19,6 @@
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD;
-
-use KORD\Exception;
-use KORD\HTTP\Exception as HTTPException;
-use KORD\HTTP\Exception\Redirect as HTTPExceptionRedirect;
-use KORD\HTTP\Header as HTTPHeader;
-use KORD\Request;
-use KORD\Response;
-
 abstract class HTTPSrc
 {
 

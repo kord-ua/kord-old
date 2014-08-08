@@ -1,5 +1,7 @@
 <?php
 
+namespace KORD\Helper;
+
 /**
  * A port of [phputf8](http://phputf8.sourceforge.net/) to a unified set
  * of files. Provides multi-byte aware replacement string functions.
@@ -19,9 +21,6 @@
  * @copyright  (c) 2005 Harry Fuecks
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Helper;
-
 class UTF8Src
 {
 

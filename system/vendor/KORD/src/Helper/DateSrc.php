@@ -1,13 +1,12 @@
 <?php
 
+namespace KORD\Helper;
+
 /**
  * Date helper.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Helper;
-
 class DateSrc
 {
 

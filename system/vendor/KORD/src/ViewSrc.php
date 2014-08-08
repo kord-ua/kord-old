@@ -1,13 +1,5 @@
 <?php
 
-/**
- * Acts as an object wrapper for HTML pages with embedded PHP, called "views".
- * Variables can be assigned with the view object and referenced locally within
- * the view.
- * 
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD;
 
 use KORD\Core;
@@ -15,6 +7,13 @@ use KORD\Exception;
 use KORD\View;
 use KORD\View\Exception as ViewException;
 
+/**
+ * Acts as an object wrapper for HTML pages with embedded PHP, called "views".
+ * Variables can be assigned with the view object and referenced locally within
+ * the view.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 class ViewSrc
 {
 

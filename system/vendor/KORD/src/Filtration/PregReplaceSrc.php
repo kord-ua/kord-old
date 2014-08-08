@@ -1,13 +1,12 @@
 <?php
 
-/**
- * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
- */
-
 namespace KORD\Filtration;
 
 use KORD\Filtration\Exception;
 
+/**
+ * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
+ */
 class PregReplaceSrc extends FilterAbstract
 {
 

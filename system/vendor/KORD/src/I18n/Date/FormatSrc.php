@@ -1,5 +1,7 @@
 <?php
 
+namespace KORD\I18n\Date;
+
 /**
  * I18n Date Format class
  * 
@@ -10,9 +12,6 @@
  * 
  * @copyright  (c) 2012 Korney Czukowski
  */
-
-namespace KORD\I18n\Date;
-
 class FormatSrc
 {
 

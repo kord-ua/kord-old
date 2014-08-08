@@ -1,14 +1,13 @@
 <?php
 
-/**
- * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
- */
-
 namespace KORD\Validation;
 
 use KORD\Validation\Exception;
 use KORD\Validation\NotEmpty;
 
+/**
+ * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
+ */
 class NotEmptySrc extends RuleAbstract
 {
 

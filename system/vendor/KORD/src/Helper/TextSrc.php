@@ -1,15 +1,12 @@
 <?php
 
+namespace KORD\Helper;
+
 /**
  * Text helper class. Provides simple methods for working with text.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Helper;
-
-use KORD\Helper\Text\UserAgent;
-
 class TextSrc
 {
 
@@ -618,7 +615,7 @@ class TextSrc
             $info = [];
 
             // Load browsers
-            $browsers = UserAgent::$browser;
+            $browsers = Text\UserAgent::$browser;
 
             foreach ($browsers as $search => $name) {
                 if (stripos($agent, $search) !== false) {
@@ -638,7 +635,7 @@ class TextSrc
             }
         } else {
             // Load the search group for this type
-            $group = UserAgent::$$value;
+            $group = Text\UserAgent::$$value;
 
             foreach ($group as $search => $name) {
                 if (stripos($agent, $search) !== false) {

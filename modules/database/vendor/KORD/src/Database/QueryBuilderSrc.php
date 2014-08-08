@@ -1,15 +1,14 @@
 <?php
 
+namespace KORD\Database;
+
+use KORD\Database;
+
 /**
  * Database query builder. See [Query Builder](/database/query/builder) for usage and examples.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Database;
-
-use KORD\Database;
-
 abstract class QueryBuilderSrc extends \KORD\Database\Query
 {
 

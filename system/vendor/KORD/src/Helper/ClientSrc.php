@@ -1,11 +1,10 @@
 <?php
 
+namespace KORD\Helper;
+
 /**
  * Helps to handle client information
  */
-
-namespace KORD\Helper;
-
 class ClientSrc
 {
     

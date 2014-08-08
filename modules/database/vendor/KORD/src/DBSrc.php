@@ -1,5 +1,7 @@
 <?php
 
+namespace KORD;
+
 /**
  * Provides a shortcut to get Database related objects for [making queries](../database/query).
  *
@@ -16,9 +18,6 @@
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD;
-
 class DBSrc
 {
 

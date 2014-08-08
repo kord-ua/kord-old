@@ -11,13 +11,11 @@ class FormSrc
 {
 
     /**
-     *
      * @var array Languages list / empty if form is single-language
      */
     protected $languages = [];
 
     /**
-     *
      * @var array Form areas
      */
     protected $areas = [];

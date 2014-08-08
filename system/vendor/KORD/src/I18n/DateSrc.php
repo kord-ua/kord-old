@@ -1,16 +1,15 @@
 <?php
 
+namespace KORD\I18n;
+
+use KORD\I18n\Date\Format as DateFormat;
+
 /**
  * I18n Date helper.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  * @copyright  (c) 2012 Korney Czukowski
  */
-
-namespace KORD\I18n;
-
-use KORD\I18n\Date\Format as DateFormat;
-
 class DateSrc
 {
 

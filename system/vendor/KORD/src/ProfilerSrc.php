@@ -1,5 +1,10 @@
 <?php
 
+namespace KORD;
+
+use KORD\Core;
+use KORD\Profiler;
+
 /**
  * Provides simple benchmarking and profiling. To display the statistics that
  * have been collected, load the `profiler/stats` [View]:
@@ -8,12 +13,6 @@
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD;
-
-use KORD\Core;
-use KORD\Profiler;
-
 class ProfilerSrc
 {
 

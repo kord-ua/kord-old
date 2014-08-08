@@ -1,5 +1,7 @@
 <?php
 
+namespace KORD\I18n\Plural;
+
 /**
  * Plural rules for Manx language:
  * 
@@ -18,9 +20,6 @@
  * 
  * @copyright  (c) 2012 Korney Czukowski
  */
-
-namespace KORD\I18n\Plural;
-
 class ManxSrc extends IntegerRule
 {
 

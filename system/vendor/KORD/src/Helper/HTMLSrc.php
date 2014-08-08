@@ -1,14 +1,13 @@
 <?php
 
+namespace KORD\Helper;
+
 /**
  * HTML helper class. Provides generic methods for generating various HTML
  * tags and making output HTML safe.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Helper;
-
 class HTMLSrc
 {
 

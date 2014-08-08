@@ -1,5 +1,9 @@
 <?php
 
+namespace KORD\Config;
+
+use KORD\Config;
+
 /**
  * The group wrapper acts as an interface to all the config directives
  * gathered from across the system.
@@ -10,11 +14,6 @@
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Config;
-
-use KORD\Config;
-
 class GroupSrc extends \ArrayObject
 {
 

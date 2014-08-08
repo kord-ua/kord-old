@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Message logging with observer-based log writing.
- *
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD;
 
 use KORD\Log;
@@ -13,6 +7,11 @@ use KORD\Log\Writer as LogWriter;
 use KORD\Log\Level as LogLevel;
 use Psr\Log\InvalidArgumentException;
 
+/**
+ * Message logging with observer-based log writing.
+ *
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 class LogSrc extends \Psr\Log\AbstractLogger
 {
     

@@ -2,6 +2,9 @@
 
 namespace KORD\Helper\Text;
 
+/**
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 class UserAgentSrc
 {
     public static $platform = [

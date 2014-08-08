@@ -1,5 +1,7 @@
 <?php
 
+namespace KORD\HTTP;
+
 /**
  * A HTTP Response specific interface that adds the methods required
  * by HTTP responses. Over and above [\KORD\HTTP\Interaction], this
@@ -7,9 +9,6 @@
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\HTTP;
-
 interface ResponseSrc extends \KORD\HTTP\Message
 {
 

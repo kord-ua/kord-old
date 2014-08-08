@@ -1,6 +1,6 @@
 <?php
 
-namespace KORD;
+namespace KORD\Helper;
 
 /**
  * Inflector helper class. Inflection is changing the form of a word based on

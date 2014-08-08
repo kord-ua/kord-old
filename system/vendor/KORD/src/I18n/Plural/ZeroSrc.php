@@ -1,5 +1,7 @@
 <?php
 
+namespace KORD\I18n\Plural;
+
 /**
  * Plural rules for the following locales and languages:
  * 
@@ -28,9 +30,6 @@
  * 
  * @copyright  (c) 2012 Korney Czukowski
  */
-
-namespace KORD\I18n\Plural;
-
 class ZeroSrc implements PluralInterface
 {
 

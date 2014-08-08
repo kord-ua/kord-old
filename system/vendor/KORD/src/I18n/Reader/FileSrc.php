@@ -5,6 +5,13 @@ namespace KORD\I18n\Reader;
 use KORD\Core;
 use KORD\Helper\Arr;
 
+/**
+ * I18n File Reader
+ * 
+ * Uses KORD i18n files, the code is a slightly modified version of `Kohana_I18n` class.
+
+ * @copyright  (c) 2012 Korney Czukowski
+ */
 class FileSrc implements ReaderInterface
 {
 

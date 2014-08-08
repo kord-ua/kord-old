@@ -1,17 +1,16 @@
 <?php
 
-/**
- * Log writer abstract class. All [Log] writers must extend this class.
- *
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD\Log;
 
 use KORD\Helper\Date;
 use KORD\Log\Level as LogLevel;
 use KORD\Log\Writer as LogWriter;
 
+/**
+ * Log writer abstract class. All [Log] writers must extend this class.
+ *
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 abstract class WriterSrc
 {
 

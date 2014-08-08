@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Array and variable validation.
- * 
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD;
 
 use KORD\Core;
@@ -13,6 +7,11 @@ use KORD\Helper\Arr;
 use KORD\Profiler;
 use KORD\Validation\RuleAbstract;
 
+/**
+ * Array and variable validation.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 class ValidationSrc implements \ArrayAccess
 {
 

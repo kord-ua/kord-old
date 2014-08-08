@@ -1,16 +1,15 @@
 <?php
 
-/**
- * Database query wrapper.  See [Parameterized Statements](database/query/parameterized) for usage and examples.
- * 
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD\Database;
 
 use KORD\Core;
 use KORD\Database;
 
+/**
+ * Database query wrapper.  See [Parameterized Statements](database/query/parameterized) for usage and examples.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 class QuerySrc
 {
 

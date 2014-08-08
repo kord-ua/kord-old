@@ -1,17 +1,16 @@
 <?php
 
+namespace KORD\Config\File;
+
+use KORD\Config\WriterSrc as ConfigWriterSrc;
+use KORD\Core;
+
 /**
  * File-based configuration reader/writer. Multiple configuration directories 
  * can be used by attaching multiple instances of this class to [\KORD\Config].
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Config\File;
-
-use KORD\Config\WriterSrc as ConfigWriterSrc;
-use KORD\Core;
-
 class WriterSrc extends ReaderSrc implements ConfigWriterSrc
 {
 

@@ -1,13 +1,12 @@
 <?php
 
+namespace KORD\Database\Result;
+
 /**
  * Object used for caching the results of select queries.  See [Results](/database/results#select-cached) for usage and examples.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Database\Result;
-
 class CachedSrc extends \KORD\Database\Result
 {
 

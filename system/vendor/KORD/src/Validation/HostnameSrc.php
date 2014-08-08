@@ -1,15 +1,14 @@
 <?php
 
-/**
- * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
- */
-
 namespace KORD\Validation;
 
 use KORD\Core;
 use KORD\Helper\UTF8;
 use KORD\Validation\Hostname;
 
+/**
+ * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
+ */
 class HostnameSrc extends RuleAbstract
 {
     const ALLOW_DNS   = 1;  // Allows Internet domain names (e.g., example.com)

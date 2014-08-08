@@ -1,13 +1,5 @@
 <?php
 
-/**
- * Response wrapper. Created as the result of any [Request] execution
- * or utility method (i.e. Redirect). Implements standard HTTP
- * response format.
- * 
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD;
 
 use KORD\Core;
@@ -23,6 +15,13 @@ use KORD\Request;
 use KORD\Request\Exception as RequestException;
 use KORD\Response;
 
+/**
+ * Response wrapper. Created as the result of any [Request] execution
+ * or utility method (i.e. Redirect). Implements standard HTTP
+ * response format.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 class ResponseSrc implements HTTPResponse
 {
     // HTTP status codes and messages

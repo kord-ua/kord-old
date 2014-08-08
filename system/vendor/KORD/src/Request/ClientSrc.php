@@ -1,13 +1,5 @@
 <?php
 
-/**
- * Request Client. Processes a [\KORD\Request] and handles [\KORD\HTTP\Caching] if
- * available. Will usually return a [\KORD\Response] object as a result of the
- * request unless an unexpected error occurs.
- * 
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD\Request;
 
 use KORD\Request;
@@ -15,6 +7,13 @@ use KORD\Request\Client as RequestClient;
 use KORD\Request\Client\Recursion\Exception as RequestClientRecursionException;
 use KORD\Response;
 
+/**
+ * Request Client. Processes a [\KORD\Request] and handles [\KORD\HTTP\Caching] if
+ * available. Will usually return a [\KORD\Response] object as a result of the
+ * request unless an unexpected error occurs.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 abstract class ClientSrc
 {
 

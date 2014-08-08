@@ -1,5 +1,12 @@
 <?php
 
+namespace KORD\Route;
+
+use KORD\Core;
+use KORD\Exception;
+use KORD\Route;
+use KORD\Helper\URL;
+
 /**
  * Routes are used to determine the controller and action for a requested URI.
  * Every route generates a regular expression which is used to match a URI
@@ -30,14 +37,6 @@
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Route;
-
-use KORD\Core;
-use KORD\Exception;
-use KORD\Route;
-use KORD\Helper\URL;
-
 class RepositorySrc
 {
 

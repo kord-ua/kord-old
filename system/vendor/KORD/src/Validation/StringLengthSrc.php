@@ -1,14 +1,13 @@
 <?php
 
-/**
- * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
- */
-
 namespace KORD\Validation;
 
 use KORD\Helper\UTF8;
 use KORD\Validation\Exception;
 
+/**
+ * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
+ */
 class StringLengthSrc extends RuleAbstract
 {
 

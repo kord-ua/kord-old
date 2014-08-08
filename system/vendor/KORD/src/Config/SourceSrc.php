@@ -1,5 +1,7 @@
 <?php
 
+namespace KORD\Config;
+
 /**
  * Base Config source Interface
  *
@@ -8,9 +10,6 @@
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Config;
-
 interface SourceSrc
 {
     

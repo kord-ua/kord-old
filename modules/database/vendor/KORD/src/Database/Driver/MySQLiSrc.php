@@ -1,9 +1,5 @@
 <?php
 
-/**
- * MySQLi database connection.
- */
-
 namespace KORD\Database\Driver;
 
 use KORD\Core;
@@ -11,6 +7,9 @@ use KORD\Database;
 use KORD\Database\Exception as DatabaseException;
 use KORD\Profiler;
 
+/**
+ * MySQLi database connection driver.
+ */
 class MySQLiSrc extends \KORD\Database
 {
 

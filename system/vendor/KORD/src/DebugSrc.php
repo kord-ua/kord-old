@@ -1,17 +1,16 @@
 <?php
 
-/*
- * Contains debugging and dumping tools.
- * 
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD;
 
 use KORD\Core;
 use KORD\Debug;
 use KORD\Helper\UTF8;
 
+/*
+ * Contains debugging and dumping tools.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 class DebugSrc
 {
 

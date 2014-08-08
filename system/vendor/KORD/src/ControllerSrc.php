@@ -1,5 +1,12 @@
 <?php
 
+namespace KORD;
+
+use KORD\HTTP;
+use KORD\HTTP\Exception as HTTPException;
+use KORD\Request;
+use KORD\Response;
+
 /**
  * Abstract controller class. Controllers should only be created using a [\KORD\Request].
  *
@@ -17,14 +24,6 @@
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD;
-
-use KORD\HTTP;
-use KORD\HTTP\Exception as HTTPException;
-use KORD\Request;
-use KORD\Response;
-
 abstract class ControllerSrc
 {
 

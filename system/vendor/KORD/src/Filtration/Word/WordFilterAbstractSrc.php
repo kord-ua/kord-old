@@ -1,14 +1,13 @@
 <?php
 
-/**
- * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
- */
-
 namespace KORD\Filtration\Word;
 
 use KORD\Filtration\FilterAbstract;
 use KORD\Filtration\Exception;
 
+/**
+ * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
+ */
 abstract class WordFilterAbstractSrc extends FilterAbstract
 {
     

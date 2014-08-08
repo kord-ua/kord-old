@@ -1,12 +1,5 @@
 <?php
 
-/**
- * Request. Uses the [\KORD\Route] class to determine what
- * [\KORD\Controller] to send the request to.
- *
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD;
 
 use KORD\Core;
@@ -26,6 +19,12 @@ use KORD\Request\Client\Internal as RequestClientInternal;
 use KORD\Route;
 use KORD\Route\Repository;
 
+/**
+ * Request. Uses the [\KORD\Route] class to determine what
+ * [\KORD\Controller] to send the request to.
+ *
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 class RequestSrc implements \KORD\HTTP\Request
 {
     

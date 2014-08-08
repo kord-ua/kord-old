@@ -1,14 +1,13 @@
 <?php
 
-/**
- * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
- */
-
 namespace KORD\Filtration;
 
 use KORD\Filtration\Exception;
 use KORD\Helper\Arr;
 
+/**
+ * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
+ */
 abstract class FilterAbstractSrc implements \KORD\Filtration\FilterInterface
 {
 

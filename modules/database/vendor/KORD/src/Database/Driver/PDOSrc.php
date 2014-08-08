@@ -1,11 +1,5 @@
 <?php
 
-/**
- * PDO database connection.
- * 
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD\Database\Driver;
 
 use KORD\Core;
@@ -13,6 +7,11 @@ use KORD\Database;
 use KORD\Database\Exception as DatabaseException;
 use KORD\Profiler;
 
+/**
+ * PDO database connection.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 class PDOSrc extends \KORD\Database
 {
 

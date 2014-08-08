@@ -1,11 +1,5 @@
 <?php
 
-/**
- * KORD exception class. Translates exceptions using the [I18n] class.
- * 
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD;
 
 use KORD\Core;
@@ -16,6 +10,11 @@ use KORD\Log\Level as LogLevel;
 use KORD\Response;
 use KORD\View;
 
+/**
+ * KORD exception class. Translates exceptions using the [I18n] class.
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 class ExceptionSrc extends \Exception
 {
 

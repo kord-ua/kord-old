@@ -1,15 +1,14 @@
 <?php
 
+namespace KORD\Config;
+
+use KORD\Config\SourceSrc as ConfigSourceSrc;
+
 /**
  * Interface for config readers
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Config;
-
-use KORD\Config\SourceSrc as ConfigSourceSrc;
-
 interface ReaderSrc extends ConfigSourceSrc
 {
 

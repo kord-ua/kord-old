@@ -1,5 +1,12 @@
 <?php
 
+namespace KORD\Request\Client;
+
+use KORD\HTTP\Request as HTTPRequest;
+use KORD\Request;
+use KORD\Request\Exception as RequestException;
+use KORD\Response;
+
 /**
  * [\KORD\Request\Client\External] HTTP driver performs external requests using the
  * php-http extension. To use this driver, ensure the following is completed
@@ -12,14 +19,6 @@
  * @copyright  (c) 2007–2014 Kohana Team
  * @uses       [PECL HTTP](http://php.net/manual/en/book.http.php)
  */
-
-namespace KORD\Request\Client;
-
-use KORD\HTTP\Request as HTTPRequest;
-use KORD\Request;
-use KORD\Request\Exception as RequestException;
-use KORD\Response;
-
 class HTTPSrc extends \KORD\Request\Client\External
 {
 

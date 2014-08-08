@@ -1,24 +1,23 @@
 <?php
 
-/**
- * Internationalization (i18n) class. Provides language loading and translation
- * methods without dependencies on [gettext](http://php.net/gettext).
- *
- * Typically this class would never be used directly, but used via the __()
- * function, which loads the message and replaces parameters:
- *
- *     // Display a translated message
- *     echo __('hello.world');
- *
- *     // With parameter replacement
- *     ___('{count} user is online', 1000, ['count' => 1000]);
- *
- * @copyright  (c) 2007–2014 Kohana Team
- * @copyright  (c) 2012 Korney Czukowski
- */
-
 namespace KORD {
 
+    /**
+     * Internationalization (i18n) class. Provides language loading and translation
+     * methods without dependencies on [gettext](http://php.net/gettext).
+     *
+     * Typically this class would never be used directly, but used via the __()
+     * function, which loads the message and replaces parameters:
+     *
+     *     // Display a translated message
+     *     echo __('hello.world');
+     *
+     *     // With parameter replacement
+     *     ___('{count} user is online', 1000, ['count' => 1000]);
+     *
+     * @copyright  (c) 2007–2014 Kohana Team
+     * @copyright  (c) 2012 Korney Czukowski
+     */
     class I18nSrc
     {
 

@@ -1,14 +1,13 @@
 <?php
 
-/**
- * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
- */
-
 namespace KORD\Validation;
 
 use KORD\Helper\Arr;
 use KORD\Validation\Exception;
 
+/**
+ * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
+ */
 abstract class RuleAbstractSrc implements RuleInterface
 {
     

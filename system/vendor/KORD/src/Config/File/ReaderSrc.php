@@ -1,18 +1,17 @@
 <?php
 
-/**
- * File-based configuration reader. Multiple configuration directories can be
- * used by attaching multiple instances of this class to [\KORD\Config].
- * 
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD\Config\File;
 
 use KORD\Config\ReaderSrc as ConfigReaderSrc;
 use KORD\Core;
 use KORD\Helper\Arr;
 
+/**
+ * File-based configuration reader. Multiple configuration directories can be
+ * used by attaching multiple instances of this class to [\KORD\Config].
+ * 
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 class ReaderSrc implements ConfigReaderSrc
 {
 

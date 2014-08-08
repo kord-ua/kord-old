@@ -1,5 +1,7 @@
 <?php
 
+namespace KORD\I18n\Plural;
+
 /**
  * Plural rules for Latvian language:
  * 
@@ -19,9 +21,6 @@
  * 
  * @copyright  (c) 2012 Korney Czukowski
  */
-
-namespace KORD\I18n\Plural;
-
 class LatvianSrc extends IntegerRule
 {
 

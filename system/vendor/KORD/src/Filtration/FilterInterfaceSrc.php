@@ -1,11 +1,10 @@
 <?php
 
+namespace KORD\Filtration;
+
 /**
  * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
  */
-
-namespace KORD\Filtration;
-
 interface FilterInterfaceSrc
 {
     /**

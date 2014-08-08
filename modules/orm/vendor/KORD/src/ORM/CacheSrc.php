@@ -1,9 +1,5 @@
 <?php
 
-/**
- * @copyright  (c) 2007–2014 Kohana Team
- */
-
 namespace KORD\ORM;
 
 use KORD\Core;
@@ -11,6 +7,9 @@ use KORD\Helper\Arr;
 use KORD\Helper\Date;
 use KORD\ORM\Exception as ORMException;
 
+/**
+ * @copyright  (c) 2007–2014 Kohana Team
+ */
 class CacheSrc
 {
 

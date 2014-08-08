@@ -1,11 +1,10 @@
 <?php
 
+namespace KORD\Helper;
+
 /**
  * Encoding helper class.
  */
-
-namespace KORD\Helper;
-
 class EncodingSrc
 {
 

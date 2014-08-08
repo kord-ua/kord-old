@@ -1,5 +1,11 @@
 <?php
 
+namespace KORD\Request\Client;
+
+use KORD\HTTP\Request as HTTPRequest;
+use KORD\Request;
+use KORD\Response;
+
 /**
  * [\KORD\Request\Client] Stream driver performs external requests using php
  * sockets. To use this driver, ensure the following is completed
@@ -13,13 +19,6 @@
  * @copyright  (c) 2007–2014 Kohana Team
  * @uses       [PHP Streams](http://php.net/manual/en/book.stream.php)
  */
-
-namespace KORD\Request\Client;
-
-use KORD\HTTP\Request as HTTPRequest;
-use KORD\Request;
-use KORD\Response;
-
 class StreamSrc extends \KORD\Request\Client\External
 {
 

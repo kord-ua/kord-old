@@ -1,15 +1,14 @@
 <?php
 
+namespace KORD\Database\QueryBuilder;
+
+use KORD\Database;
+
 /**
  * Database query builder for JOIN statements. See [Query Builder](/database/query/builder) for usage and examples.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Database\QueryBuilder;
-
-use KORD\Database;
-
 class JoinSrc extends \KORD\Database\QueryBuilder
 {
 

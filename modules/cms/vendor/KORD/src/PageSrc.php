@@ -1,11 +1,10 @@
 <?php
 
+namespace KORD;
+
 /**
  * Page
  */
-
-namespace KORD;
-
 class PageSrc
 {
     

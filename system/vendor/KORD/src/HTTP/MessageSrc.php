@@ -1,14 +1,13 @@
 <?php
 
+namespace KORD\HTTP;
+
 /**
  * The HTTP Interaction interface providing the core HTTP methods that
  * should be implemented by any HTTP request or response class.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\HTTP;
-
 interface MessageSrc
 {
 

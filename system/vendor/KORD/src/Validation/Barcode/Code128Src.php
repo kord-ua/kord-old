@@ -6,6 +6,7 @@ use KORD\Helper\UTF8;
 
 /**
  * @todo Test this adapter
+ * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
  */
 class Code128Src extends AdapterAbstract
 {

@@ -1,13 +1,12 @@
 <?php
 
+namespace KORD\Helper;
+
 /**
  * Helps to handle $_SERVER superglobal array
  *
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Helper;
-
 class ServerSrc
 {
 
@@ -23,7 +22,7 @@ class ServerSrc
      */
     public static function requestMethod()
     {
-        return Arr::get($_SERVER, 'REQUEST_METHOD', 'GET');
+        return isset($_SERVER['REQUEST_METHOD']) ? $_SERVER['REQUEST_METHOD'] : 'GET';
     }
 
     /**
@@ -46,7 +45,7 @@ class ServerSrc
      */
     public static function httpReferrer()
     {
-        return Arr::get($_SERVER, 'HTTP_REFERER', 'unknown');
+        return isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'unknown';
     }
 
     /**
@@ -56,7 +55,7 @@ class ServerSrc
      */
     public static function userAgent()
     {
-        return Arr::get($_SERVER, 'HTTP_USER_AGENT', 'unknown');
+        return isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : 'unknown';
     }
 
     /**
@@ -66,7 +65,7 @@ class ServerSrc
      */
     public static function requestedWith()
     {
-        return Arr::get($_SERVER, 'HTTP_X_REQUESTED_WITH', 'unknown');
+        return isset($_SERVER['HTTP_X_REQUESTED_WITH']) ? $_SERVER['HTTP_X_REQUESTED_WITH'] : 'unknown';
     }
 
     /**
@@ -95,7 +94,7 @@ class ServerSrc
             return array_shift($client_ips);
         }
         
-        return Arr::get($_SERVER, 'REMOTE_ADDR', '0.0.0.0');
+        return isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : '0.0.0.0';
     }
     
     /**
@@ -167,7 +166,6 @@ class ServerSrc
      *
      * @return  boolean
      * @uses    Num::bytes
-     * @uses    Arr::get
      */
     public static function postMaxSizeExceeded()
     {
@@ -180,7 +178,8 @@ class ServerSrc
         $max_bytes = Num::bytes(ini_get('post_max_size'));
 
         // Error occurred if method is POST, and content length is too long
-        return (Arr::get($_SERVER, 'CONTENT_LENGTH') > $max_bytes);
+        $content_length = isset($_SERVER['CONTENT_LENGTH']) ? $_SERVER['CONTENT_LENGTH'] : 0;
+        return ($content_length > $max_bytes);
     }
 
 }

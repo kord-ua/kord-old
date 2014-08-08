@@ -1,13 +1,12 @@
 <?php
 
+namespace KORD\Helper;
+
 /**
  * Cookie helper.
  *
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Helper;
-
 class CookieSrc
 {
 

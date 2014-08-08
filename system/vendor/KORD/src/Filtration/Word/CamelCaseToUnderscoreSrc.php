@@ -1,11 +1,10 @@
 <?php
 
+namespace KORD\Filtration\Word;
+
 /**
  * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
  */
-
-namespace KORD\Filtration\Word;
-
 class CamelCaseToUnderscoreSrc extends CamelCaseToSeparator
 {
 

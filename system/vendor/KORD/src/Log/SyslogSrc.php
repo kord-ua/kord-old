@@ -1,15 +1,14 @@
 <?php
 
+namespace KORD\Log;
+
+use KORD\Log\Writer as LogWriter;
+
 /**
  * Syslog log writer.
  *
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD\Log;
-
-use KORD\Log\Writer as LogWriter;
-
 class SyslogSrc extends LogWriter
 {
 

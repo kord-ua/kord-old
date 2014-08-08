@@ -1,5 +1,10 @@
 <?php
 
+namespace KORD;
+
+use KORD\Database;
+use KORD\Exception;
+
 /**
  * Database connection wrapper/helper.
  *
@@ -8,12 +13,6 @@
  * 
  * @copyright  (c) 2007–2014 Kohana Team
  */
-
-namespace KORD;
-
-use KORD\Database;
-use KORD\Exception;
-
 abstract class DatabaseSrc
 {
 

@@ -1,9 +1,8 @@
 <?php
 
+namespace KORD\Database;
+
 /**
  * Database exceptions.
  */
-
-namespace KORD\Database;
-
 class ExceptionSrc extends \KORD\Exception {}
