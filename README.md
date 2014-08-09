@@ -64,6 +64,11 @@ Thus, multiple translators can be used within one application.
 * Initialized routes are now being stored in a separate class (repository)
 * Routes do not contain `directory` param (see KORD\Request)
 
+### Session (KORD\Session)
+* Basic session fixation protection and session hijacking protection
+* When session id expires (session fixation protection) old session is still available for 30 seconds e.g. for ajax calls
+* Native PHP sessions can now be encrypted
+
 ### Validation (KORD\Validation)
 * Validation rules are based on Zend Framework validators
 * Rules are combined into chains, chains can be broken on first validation rule check failure (one error message), or all validation rules will be checked (one error message per failed validation rule)

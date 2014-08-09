@@ -75,11 +75,23 @@ if (isset($_SERVER['KORD_ENV'])) {
 }
 
 /**
+ * Set cookie salt
+ * 
+ * IMPORTANT: Change the salt for every new application!!!
+ */
+\KORD\Helper\Cookie::$salt = 'testsalt';
+
+/**
  * Init default Encrypt instance
  * 
  * IMPORTANT: Change the key for every new application!!!
  */
 \KORD\Encrypt::setInstance(null, ['key' => 'foobarkey']);
+
+/**
+ * Init default Session instance
+ */
+\KORD\Session::setInstance(null, null, []);
 
 /**
  * Initialize KORD, setting the default options.
