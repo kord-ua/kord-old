@@ -1,5 +1,5 @@
 <?php
 
-namespace KORD;
+namespace KORD\Crypt;
 
 class Encrypt extends EncryptSrc {}

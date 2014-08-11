@@ -1,6 +1,6 @@
 <?php
 
-namespace KORD;
+namespace KORD\Crypt;
 
 /**
  * The Encrypt library provides two-way encryption of text and binary strings
@@ -44,7 +44,7 @@ class EncryptSrc
      * Sets a new instance of Encrypt. An encryption key must be
      * provided in $config
      *
-     *     $encrypt = Encrypt::setInstance('custom', ['key' => 'foobar']);
+     *     Encrypt::setInstance('custom', ['key' => 'foobar']);
      *
      * @param   string  $name   Encrypt instance name
      * @param   array   $config Encrypt instance config

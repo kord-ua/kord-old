@@ -62,7 +62,7 @@ class NativeSrc extends \KORD\Session
             $_SESSION['SESSION_DATA'] = [];
         } elseif ($this->encrypted) {
             // Decrypt the data using the default key
-            $_SESSION['SESSION_DATA'] = $this->unserialize(\KORD\Encrypt::getInstance($this->encrypted)->decode($_SESSION['SESSION_DATA']));
+            $_SESSION['SESSION_DATA'] = $this->unserialize(\KORD\Crypt\Encrypt::getInstance($this->encrypted)->decode($_SESSION['SESSION_DATA']));
         }
         $this->data = & $_SESSION['SESSION_DATA'];
 
@@ -87,7 +87,7 @@ class NativeSrc extends \KORD\Session
     {
         if ($this->encrypted) {
             // Encrypt the data using the default key
-            $this->data = \KORD\Encrypt::getInstance($this->encrypted)->encode($this->serialize($this->data));
+            $this->data = \KORD\Crypt\Encrypt::getInstance($this->encrypted)->encode($this->serialize($this->data));
         }
         
         // Write and close the session
@@ -109,7 +109,7 @@ class NativeSrc extends \KORD\Session
             $_SESSION['SESSION_DATA'] = [];
         } elseif ($this->encrypted) {
             // Decrypt the data using the default key
-            $_SESSION['SESSION_DATA'] = $this->unserialize(\KORD\Encrypt::getInstance($this->encrypted)->decode($_SESSION['SESSION_DATA']));
+            $_SESSION['SESSION_DATA'] = $this->unserialize(\KORD\Crypt\Encrypt::getInstance($this->encrypted)->decode($_SESSION['SESSION_DATA']));
         }
         $this->data = & $_SESSION['SESSION_DATA'];
 

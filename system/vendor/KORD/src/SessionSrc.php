@@ -179,7 +179,7 @@ abstract class SessionSrc
 
         if ($this->encrypted) {
             // Encrypt the data using the default key
-            $data = \KORD\Encrypt::getInstance($this->encrypted)->encode($data);
+            $data = \KORD\Crypt\Encrypt::getInstance($this->encrypted)->encode($data);
         } else {
             // Encode the data
             $data = $this->encode($data);
@@ -330,7 +330,7 @@ abstract class SessionSrc
             if (is_string($data = $this->readSession($id))) {
                 if ($this->encrypted) {
                     // Decrypt the data using the default key
-                    $data = \KORD\Encrypt::getInstance($this->encrypted)->decode($data);
+                    $data = \KORD\Crypt\Encrypt::getInstance($this->encrypted)->decode($data);
                 } else {
                     // Decode the data
                     $data = $this->decode($data);

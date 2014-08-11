@@ -86,7 +86,12 @@ if (isset($_SERVER['KORD_ENV'])) {
  * 
  * IMPORTANT: Change the key for every new application!!!
  */
-\KORD\Encrypt::setInstance(null, ['key' => 'foobarkey']);
+\KORD\Crypt\Encrypt::setInstance(null, ['key' => 'foobarkey']);
+
+/**
+ * Init default Hash instance
+ */
+\KORD\Crypt\Hash::setInstance(null, []);
 
 /**
  * Init default Session instance
