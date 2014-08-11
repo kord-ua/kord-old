@@ -6,10 +6,11 @@ use KORD\Core;
 use KORD\Debug;
 use KORD\Helper\UTF8;
 
-/*
+/**
  * Contains debugging and dumping tools.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class DebugSrc
 {

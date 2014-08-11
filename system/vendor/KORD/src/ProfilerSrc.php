@@ -12,6 +12,7 @@ use KORD\Profiler;
  *     echo \KORD\View::factory('profiler/stats');
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class ProfilerSrc
 {

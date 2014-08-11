@@ -6,6 +6,7 @@ namespace KORD\Log;
  * STDERR log writer. Writes out messages to STDERR.
  *
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class StdErrSrc extends \KORD\Log\Writer
 {

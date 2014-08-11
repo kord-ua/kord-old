@@ -11,7 +11,7 @@ if (version_compare(PHP_VERSION, '5.3', '<'))
 else
 {
 	// Clearing the realpath() cache is only possible PHP 5.3+
-	clearstatcache(TRUE);
+	clearstatcache(true);
 }
 
 ?>
@@ -22,7 +22,7 @@ else
 <head>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Kohana Installation</title>
+	<title>KORD Framework Installation</title>
 
 	<style type="text/css">
 	body { width: 42em; margin: 0 auto; font-family: sans-serif; background: #fff; font-size: 1em; }
@@ -47,35 +47,35 @@ else
 	<h1>Environment Tests</h1>
 
 	<p>
-		The following tests have been run to determine if <a href="http://kohanaframework.org/">Kohana</a> will work in your environment.
-		If any of the tests have failed, consult the <a href="http://kohanaframework.org/guide/about.install">documentation</a>
+		The following tests have been run to determine if <a href="http://kordframework.org/">KORD Framework</a> will work in your environment.
+		If any of the tests have failed, consult the documentation
 		for more information on how to correct the problem.
 	</p>
 
-	<?php $failed = FALSE ?>
+	<?php $failed = false ?>
 
 	<table cellspacing="0">
 		<tr>
 			<th>PHP Version</th>
-			<?php if (version_compare(PHP_VERSION, '5.3.3', '>=')): ?>
+			<?php if (version_compare(PHP_VERSION, '5.4', '>=')): ?>
 				<td class="pass"><?php echo PHP_VERSION ?></td>
-			<?php else: $failed = TRUE ?>
-				<td class="fail">Kohana requires PHP 5.3.3 or newer, this version is <?php echo PHP_VERSION ?>.</td>
+			<?php else: $failed = true ?>
+				<td class="fail">KORD Framework requires PHP 5.3.3 or newer, this version is <?php echo PHP_VERSION ?>.</td>
 			<?php endif ?>
 		</tr>
 		<tr>
 			<th>System Directory</th>
-			<?php if (is_dir(SYSPATH) AND is_file(SYSPATH.'classes/Kohana'.EXT)): ?>
+			<?php if (is_dir(SYSPATH)): ?>
 				<td class="pass"><?php echo SYSPATH ?></td>
-			<?php else: $failed = TRUE ?>
-				<td class="fail">The configured <code>system</code> directory does not exist or does not contain required files.</td>
+			<?php else: $failed = true ?>
+				<td class="fail">The configured <code>system</code> directory does not exist.</td>
 			<?php endif ?>
 		</tr>
 		<tr>
 			<th>Application Directory</th>
 			<?php if (is_dir(APPPATH) AND is_file(APPPATH.'bootstrap'.EXT)): ?>
 				<td class="pass"><?php echo APPPATH ?></td>
-			<?php else: $failed = TRUE ?>
+			<?php else: $failed = true ?>
 				<td class="fail">The configured <code>application</code> directory does not exist or does not contain required files.</td>
 			<?php endif ?>
 		</tr>
@@ -83,7 +83,7 @@ else
 			<th>Cache Directory</th>
 			<?php if (is_dir(APPPATH) AND is_dir(APPPATH.'cache') AND is_writable(APPPATH.'cache')): ?>
 				<td class="pass"><?php echo APPPATH.'cache/' ?></td>
-			<?php else: $failed = TRUE ?>
+			<?php else: $failed = true ?>
 				<td class="fail">The <code><?php echo APPPATH.'cache/' ?></code> directory is not writable.</td>
 			<?php endif ?>
 		</tr>
@@ -91,15 +91,15 @@ else
 			<th>Logs Directory</th>
 			<?php if (is_dir(APPPATH) AND is_dir(APPPATH.'logs') AND is_writable(APPPATH.'logs')): ?>
 				<td class="pass"><?php echo APPPATH.'logs/' ?></td>
-			<?php else: $failed = TRUE ?>
+			<?php else: $failed = true ?>
 				<td class="fail">The <code><?php echo APPPATH.'logs/' ?></code> directory is not writable.</td>
 			<?php endif ?>
 		</tr>
 		<tr>
 			<th>PCRE UTF-8</th>
-			<?php if ( ! @preg_match('/^.$/u', 'ñ')): $failed = TRUE ?>
+			<?php if ( ! @preg_match('/^.$/u', 'ñ')): $failed = true ?>
 				<td class="fail"><a href="http://php.net/pcre">PCRE</a> has not been compiled with UTF-8 support.</td>
-			<?php elseif ( ! @preg_match('/^\pL$/u', 'ñ')): $failed = TRUE ?>
+			<?php elseif ( ! @preg_match('/^\pL$/u', 'ñ')): $failed = true ?>
 				<td class="fail"><a href="http://php.net/pcre">PCRE</a> has not been compiled with Unicode property support.</td>
 			<?php else: ?>
 				<td class="pass">Pass</td>
@@ -109,7 +109,7 @@ else
 			<th>SPL Enabled</th>
 			<?php if (function_exists('spl_autoload_register')): ?>
 				<td class="pass">Pass</td>
-			<?php else: $failed = TRUE ?>
+			<?php else: $failed = true ?>
 				<td class="fail">PHP <a href="http://www.php.net/spl">SPL</a> is either not loaded or not compiled in.</td>
 			<?php endif ?>
 		</tr>
@@ -117,7 +117,7 @@ else
 			<th>Reflection Enabled</th>
 			<?php if (class_exists('ReflectionClass')): ?>
 				<td class="pass">Pass</td>
-			<?php else: $failed = TRUE ?>
+			<?php else: $failed = true ?>
 				<td class="fail">PHP <a href="http://www.php.net/reflection">reflection</a> is either not loaded or not compiled in.</td>
 			<?php endif ?>
 		</tr>
@@ -125,7 +125,7 @@ else
 			<th>Filters Enabled</th>
 			<?php if (function_exists('filter_list')): ?>
 				<td class="pass">Pass</td>
-			<?php else: $failed = TRUE ?>
+			<?php else: $failed = true ?>
 				<td class="fail">The <a href="http://www.php.net/filter">filter</a> extension is either not loaded or not compiled in.</td>
 			<?php endif ?>
 		</tr>
@@ -133,14 +133,14 @@ else
 			<th>Iconv Extension Loaded</th>
 			<?php if (extension_loaded('iconv')): ?>
 				<td class="pass">Pass</td>
-			<?php else: $failed = TRUE ?>
+			<?php else: $failed = true ?>
 				<td class="fail">The <a href="http://php.net/iconv">iconv</a> extension is not loaded.</td>
 			<?php endif ?>
 		</tr>
 		<?php if (extension_loaded('mbstring')): ?>
 		<tr>
 			<th>Mbstring Not Overloaded</th>
-			<?php if (ini_get('mbstring.func_overload') & MB_OVERLOAD_STRING): $failed = TRUE ?>
+			<?php if (ini_get('mbstring.func_overload') & MB_OVERLOAD_STRING): $failed = true ?>
 				<td class="fail">The <a href="http://php.net/mbstring">mbstring</a> extension is overloading PHP's native string functions.</td>
 			<?php else: ?>
 				<td class="pass">Pass</td>
@@ -149,7 +149,7 @@ else
 		<?php endif ?>
 		<tr>
 			<th>Character Type (CTYPE) Extension</th>
-			<?php if ( ! function_exists('ctype_digit')): $failed = TRUE ?>
+			<?php if ( ! function_exists('ctype_digit')): $failed = true ?>
 				<td class="fail">The <a href="http://php.net/ctype">ctype</a> extension is not enabled.</td>
 			<?php else: ?>
 				<td class="pass">Pass</td>
@@ -159,14 +159,14 @@ else
 			<th>URI Determination</th>
 			<?php if (isset($_SERVER['REQUEST_URI']) OR isset($_SERVER['PHP_SELF']) OR isset($_SERVER['PATH_INFO'])): ?>
 				<td class="pass">Pass</td>
-			<?php else: $failed = TRUE ?>
+			<?php else: $failed = true ?>
 				<td class="fail">Neither <code>$_SERVER['REQUEST_URI']</code>, <code>$_SERVER['PHP_SELF']</code>, or <code>$_SERVER['PATH_INFO']</code> is available.</td>
 			<?php endif ?>
 		</tr>
 	</table>
 
-	<?php if ($failed === TRUE): ?>
-		<p id="results" class="fail">✘ Kohana may not work correctly with your environment.</p>
+	<?php if ($failed === true): ?>
+		<p id="results" class="fail">✘ KORD Framework may not work correctly with your environment.</p>
 	<?php else: ?>
 		<p id="results" class="pass">✔ Your environment passed all requirements.<br />
 			Remove or rename the <code>install<?php echo EXT ?></code> file now.</p>
@@ -175,7 +175,7 @@ else
 	<h1>Optional Tests</h1>
 
 	<p>
-		The following extensions are not required to run the Kohana core, but if enabled can provide access to additional classes.
+		The following extensions are not required to run the KORD Framework core, but if enabled can provide access to additional classes.
 	</p>
 
 	<table cellspacing="0">
@@ -184,7 +184,7 @@ else
 			<?php if (extension_loaded('http')): ?>
 				<td class="pass">Pass</td>
 			<?php else: ?>
-				<td class="fail">Kohana can use the <a href="http://php.net/http">http</a> extension for the Request_Client_External class.</td>
+				<td class="fail">KORD Framework can use the <a href="http://php.net/http">http</a> extension for the \KORD\Request\Client\External class.</td>
 			<?php endif ?>
 		</tr>
 		<tr>
@@ -192,7 +192,7 @@ else
 			<?php if (extension_loaded('curl')): ?>
 				<td class="pass">Pass</td>
 			<?php else: ?>
-				<td class="fail">Kohana can use the <a href="http://php.net/curl">cURL</a> extension for the Request_Client_External class.</td>
+				<td class="fail">KORD Framework can use the <a href="http://php.net/curl">cURL</a> extension for the \KORD\Request\Client\External class.</td>
 			<?php endif ?>
 		</tr>
 		<tr>
@@ -200,7 +200,7 @@ else
 			<?php if (extension_loaded('mcrypt')): ?>
 				<td class="pass">Pass</td>
 			<?php else: ?>
-				<td class="fail">Kohana requires <a href="http://php.net/mcrypt">mcrypt</a> for the Encrypt class.</td>
+				<td class="fail">KORD Framework requires <a href="http://php.net/mcrypt">mcrypt</a> for the \KORD\Crypt\Encrypt class.</td>
 			<?php endif ?>
 		</tr>
 		<tr>
@@ -208,15 +208,15 @@ else
 			<?php if (function_exists('gd_info')): ?>
 				<td class="pass">Pass</td>
 			<?php else: ?>
-				<td class="fail">Kohana requires <a href="http://php.net/gd">GD</a> v2 for the Image class.</td>
+				<td class="fail">KORD Framework requires <a href="http://php.net/gd">GD</a> v2 for the Image class.</td>
 			<?php endif ?>
 		</tr>
 		<tr>
-			<th>MySQL Enabled</th>
-			<?php if (function_exists('mysql_connect')): ?>
+			<th>MySQLi Enabled</th>
+			<?php if (function_exists('mysqli_connect')): ?>
 				<td class="pass">Pass</td>
 			<?php else: ?>
-				<td class="fail">Kohana can use the <a href="http://php.net/mysql">MySQL</a> extension to support MySQL databases.</td>
+				<td class="fail">KORD Framework can use the <a href="http://php.net/mysqli">MySQL</a> extension to support MySQL databases.</td>
 			<?php endif ?>
 		</tr>
 		<tr>
@@ -224,7 +224,7 @@ else
 			<?php if (class_exists('PDO')): ?>
 				<td class="pass">Pass</td>
 			<?php else: ?>
-				<td class="fail">Kohana can use <a href="http://php.net/pdo">PDO</a> to support additional databases.</td>
+				<td class="fail">KORD Framework can use <a href="http://php.net/pdo">PDO</a> to support additional databases.</td>
 			<?php endif ?>
 		</tr>
 	</table>

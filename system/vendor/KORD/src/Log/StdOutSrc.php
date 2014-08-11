@@ -6,6 +6,7 @@ namespace KORD\Log;
  * STDOUT log writer. Writes out messages to STDOUT.
  *
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class StdOutSrc extends \KORD\Log\Writer
 {

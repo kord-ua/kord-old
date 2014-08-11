@@ -8,6 +8,9 @@ use KORD\Mustache;
 use KORD\Mustache\Loader as MustacheLoader;
 use KORD\Template;
 
+/**
+ * @copyright  (c) 2014 Andriy Strepetov
+ */
 class MustacheSrc
 {
     

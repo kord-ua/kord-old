@@ -6,6 +6,9 @@ use KORD\Exception;
 use KORD\Form\Element;
 use KORD\Helper\Arr;
 
+/**
+ * @copyright  (c) 2014 Andriy Strepetov
+ */
 class AreaSrc
 {
     

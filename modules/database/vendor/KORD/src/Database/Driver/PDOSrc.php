@@ -11,6 +11,7 @@ use KORD\Profiler;
  * PDO database connection.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class PDOSrc extends \KORD\Database
 {

@@ -21,6 +21,7 @@ namespace KORD\Crypt;
  *    which produces short output with high entropy.
  *
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class EncryptSrc
 {

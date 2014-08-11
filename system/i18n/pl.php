@@ -2,9 +2,8 @@
 /**
  * Polish sample translations
  * 
- * @package    I18n_Plural
- * @author     Jakub Wolny
  * @copyright  (c) 2011 Jakub Wolny
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 return array(
 	// Plural test

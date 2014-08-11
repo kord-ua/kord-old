@@ -4,6 +4,9 @@ namespace KORD\Log;
 
 use KORD\Log\Level as LogLevel;
 
+/**
+ * @copyright  (c) 2014 Andriy Strepetov
+ */
 class LevelSrc extends \Psr\Log\LogLevel
 {
 

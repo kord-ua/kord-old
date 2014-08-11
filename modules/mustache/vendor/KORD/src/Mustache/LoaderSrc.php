@@ -5,6 +5,9 @@ namespace KORD\Mustache;
 use KORD\Core;
 use KORD\Exception;
 
+/**
+ * @copyright  (c) 2014 Andriy Strepetov
+ */
 class LoaderSrc implements \Mustache_Loader, \Mustache_Loader_MutableLoader
 {
 

@@ -7,6 +7,9 @@ use KORD\Form\Area;
 use KORD\Helper\Arr;
 use KORD\Validation;
 
+/**
+ * @copyright  (c) 2014 Andriy Strepetov
+ */
 class FormSrc
 {
 

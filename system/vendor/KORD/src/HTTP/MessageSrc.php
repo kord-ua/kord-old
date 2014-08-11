@@ -7,6 +7,7 @@ namespace KORD\HTTP;
  * should be implemented by any HTTP request or response class.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 interface MessageSrc
 {

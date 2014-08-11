@@ -9,6 +9,7 @@ namespace KORD\Config;
  * [\KORD\Config::attach()]
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 interface SourceSrc
 {

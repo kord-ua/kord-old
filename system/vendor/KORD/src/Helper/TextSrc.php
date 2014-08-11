@@ -6,6 +6,7 @@ namespace KORD\Helper;
  * Text helper class. Provides simple methods for working with text.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class TextSrc
 {

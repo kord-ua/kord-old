@@ -7,6 +7,9 @@ use KORD\Filtration;
 use KORD\Filtration\FilterInterface;
 use KORD\Helper\Arr;
 
+/**
+ * @copyright  (c) 2014 Andriy Strepetov
+ */
 class FiltrationSrc
 {
 

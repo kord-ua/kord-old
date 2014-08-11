@@ -8,6 +8,7 @@ namespace KORD\HTTP;
  * interface provides method, uri, get and post methods.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 interface RequestSrc extends \KORD\HTTP\Message
 {

@@ -6,6 +6,9 @@ use KORD\Exception;
 use KORD\Helper\Arr;
 use KORD\View;
 
+/**
+ * @copyright  (c) 2014 Andriy Strepetov
+ */
 abstract class ElementSrc
 {
     

@@ -47,6 +47,8 @@ namespace KORD\I18n\Plural;
  * @see  http://unicode.org/repos/cldr/trunk/common/supplemental/plurals.xml
  * 
  * @copyright  (c) 2012 Korney Czukowski
+ * @copyright  (c) 2014 Andriy Strepetov
+ * @license    MIT License
  */
 class NoneSrc implements PluralInterface
 {

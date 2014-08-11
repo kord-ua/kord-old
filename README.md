@@ -6,7 +6,9 @@ KORD is an elegant, open source, and object oriented HMVC framework built using 
 
 KORD framework is licensed under the BSD License. All original scripts (Kohana Framework, Zend Framework, phputf8 and other) are licensed under their original licenses.
 
-Visit our forums: http://forum.kordframework.org
+Visit our website: http://kordframework.org
+
+Support: http://forum.kordframework.org
 
 ## New features
 * Complete PSR-compatibility: PSR-0 and PSR-4 for classes autoloading, PSR-1 and PSR-2 for coding style, PSR-3 for logging
@@ -37,6 +39,15 @@ Visit our forums: http://forum.kordframework.org
 is now equivalent to
 `Core::$i18n->translate('Translate me')`.
 Thus, multiple translators can be used within one application.
+
+### Crypt
+
+#### Encrypt (KORD\Crypt\Encrypt)
+* Non-config setup (see KORD\Crypt\Encrypt::setInstance in bootstrap.php)
+
+#### Hash (KORD\Crypt\Hash)
+* Keyed/non-keyed hashes
+* Multiple instances are supported like in KORD\Crypt\Encrypt
 
 ### Exception (KORD\Exception)
 * Exception placeholders are now with braces around context keys instead of colons (e.g. `throw new Exception("This {var} is invalid", ['var' => $var])` instead of `throw new Exception("This :var is invalid", [':var' => $var])`) according to section 1.2 of PSR-3

@@ -14,6 +14,7 @@ use KORD\Route\Repository;
  * controller, action, and parameters.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class RouteSrc
 {

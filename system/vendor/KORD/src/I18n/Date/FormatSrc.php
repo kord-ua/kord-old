@@ -11,6 +11,8 @@ namespace KORD\I18n\Date;
  * @see  http://github.com/mootools/mootools-more/blob/1.3wip/Source/Types/Date.js#L164
  * 
  * @copyright  (c) 2012 Korney Czukowski
+ * @copyright  (c) 2014 Andriy Strepetov
+ * @license    MIT License
  */
 class FormatSrc
 {

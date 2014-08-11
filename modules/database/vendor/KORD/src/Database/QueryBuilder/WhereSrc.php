@@ -6,6 +6,7 @@ namespace KORD\Database\QueryBuilder;
  * Database query builder for WHERE statements. See [Query Builder](/database/query/builder) for usage and examples.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 abstract class WhereSrc extends \KORD\Database\QueryBuilder
 {

@@ -4,6 +4,8 @@ namespace KORD;
 
 /**
  * Page
+ * 
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class PageSrc
 {

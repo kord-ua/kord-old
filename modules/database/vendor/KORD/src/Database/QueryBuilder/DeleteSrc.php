@@ -8,6 +8,7 @@ use KORD\Database;
  * Database query builder for DELETE statements. See [Query Builder](/database/query/builder) for usage and examples.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class DeleteSrc extends \KORD\Database\QueryBuilder\Where
 {

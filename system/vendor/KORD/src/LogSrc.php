@@ -11,6 +11,7 @@ use Psr\Log\InvalidArgumentException;
  * Message logging with observer-based log writing.
  *
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class LogSrc extends \Psr\Log\AbstractLogger
 {

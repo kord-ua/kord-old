@@ -8,6 +8,7 @@ use KORD\Helper\Cookie;
  * Cookie-based session class.
  *
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class CookieSrc extends \KORD\Session
 {

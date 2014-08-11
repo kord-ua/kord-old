@@ -10,6 +10,7 @@ use KORD\Log\Writer as LogWriter;
  * Log writer abstract class. All [Log] writers must extend this class.
  *
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 abstract class WriterSrc
 {

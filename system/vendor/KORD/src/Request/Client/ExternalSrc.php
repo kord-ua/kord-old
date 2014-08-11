@@ -33,6 +33,7 @@ use KORD\Response;
  *           ->client(\KORD\Request\Client\External::factory('\KORD\Request\Client\HTTP));
  *
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  * @uses       [PECL HTTP](http://php.net/manual/en/book.http.php)
  */
 abstract class ExternalSrc extends \KORD\Request\Client

@@ -6,6 +6,8 @@ namespace KORD\I18n\Plural;
  * Common base for the plural rules with integer test.
  * 
  * @copyright  (c) 2012 Korney Czukowski
+ * @copyright  (c) 2014 Andriy Strepetov
+ * @license    MIT License
  */
 abstract class IntegerRuleSrc implements PluralInterface
 {

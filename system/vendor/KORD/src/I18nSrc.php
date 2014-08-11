@@ -17,6 +17,8 @@ namespace KORD {
      *
      * @copyright  (c) 2007–2014 Kohana Team
      * @copyright  (c) 2012 Korney Czukowski
+     * @copyright  (c) 2014 Andriy Strepetov
+     * @license    MIT License
      */
     class I18nSrc
     {

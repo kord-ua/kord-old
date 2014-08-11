@@ -6,6 +6,7 @@ use KORD\Validation\RuleAbstract;
 
 /**
  * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 abstract class AdapterAbstractSrc extends RuleAbstract implements AdapterInterface
 {

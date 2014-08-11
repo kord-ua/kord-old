@@ -11,6 +11,7 @@ use KORD\Helper\Arr;
  * used by attaching multiple instances of this class to [\KORD\Config].
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class ReaderSrc implements ConfigReaderSrc
 {

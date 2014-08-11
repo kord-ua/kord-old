@@ -9,6 +9,8 @@ namespace KORD\I18n\Reader;
  * The 'other' key has a special meaning of a default translation.
  * 
  * @copyright  (c) 2012 Korney Czukowski
+ * @copyright  (c) 2014 Andriy Strepetov
+ * @license    MIT License
  */
 interface ReaderInterfaceSrc
 {

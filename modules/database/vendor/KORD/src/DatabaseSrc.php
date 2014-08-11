@@ -12,6 +12,7 @@ use KORD\Exception;
  * where name is the [config](database/config) group.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 abstract class DatabaseSrc
 {

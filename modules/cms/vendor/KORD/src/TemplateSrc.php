@@ -7,6 +7,8 @@ use KORD\Template;
 
 /**
  * Template singleton
+ * 
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class TemplateSrc
 {

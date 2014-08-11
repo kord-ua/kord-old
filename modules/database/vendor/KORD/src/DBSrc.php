@@ -17,6 +17,7 @@ namespace KORD;
  * You pass the same parameters to these functions as you pass to the objects they return.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class DBSrc
 {

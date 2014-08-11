@@ -7,6 +7,7 @@ namespace KORD\Helper;
  * with numbers.
  *
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class NumSrc
 {

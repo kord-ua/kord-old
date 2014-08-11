@@ -9,6 +9,7 @@ use KORD\DB;
  * Database query builder for SELECT statements. See [Query Builder](/database/query/builder) for usage and examples.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class SelectSrc extends \KORD\Database\QueryBuilder\Where
 {

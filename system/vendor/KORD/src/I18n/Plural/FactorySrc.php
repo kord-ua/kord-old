@@ -6,6 +6,8 @@ namespace KORD\I18n\Plural;
  * I18n Plural rules factory
  * 
  * @copyright  (c) 2012 Korney Czukowski 
+ * @copyright  (c) 2014 Andriy Strepetov
+ * @license    MIT License
  */
 class FactorySrc
 {

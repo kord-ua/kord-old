@@ -7,6 +7,7 @@ namespace KORD\Helper;
  * tags and making output HTML safe.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class HTMLSrc
 {

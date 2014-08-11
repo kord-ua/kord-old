@@ -24,6 +24,7 @@ use KORD\Route\Repository;
  * [\KORD\Controller] to send the request to.
  *
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class RequestSrc implements \KORD\HTTP\Request
 {

@@ -4,6 +4,8 @@ namespace KORD\Helper;
 
 /**
  * Encoding helper class.
+ * 
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class EncodingSrc
 {

@@ -2,6 +2,9 @@
 
 namespace KORD\Form;
 
+/**
+ * @copyright  (c) 2014 Andriy Strepetov
+ */
 class ButtonSrc extends Element
 {
     

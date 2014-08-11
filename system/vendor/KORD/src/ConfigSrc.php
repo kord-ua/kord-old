@@ -20,6 +20,7 @@ use KORD\Helper\Arr;
  * below them.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class ConfigSrc
 {

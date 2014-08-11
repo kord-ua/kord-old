@@ -9,6 +9,7 @@ use KORD\Exception;
  * File log writer. Writes out messages and stores them in a YYYY/MM directory.
  *
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class FileSrc extends \KORD\Log\Writer
 {

@@ -11,6 +11,7 @@ use KORD\Response;
  * php-curl extention. This is the default driver for all external requests.
  *
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class CurlSrc extends \KORD\Request\Client\External
 {

@@ -9,6 +9,7 @@ use KORD\Database\Query as DatabaseQuery;
  * Database query builder for INSERT statements. See [Query Builder](/database/query/builder) for usage and examples.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class InsertSrc extends \KORD\Database\QueryBuilder
 {

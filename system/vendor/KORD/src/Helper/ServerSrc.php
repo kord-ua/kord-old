@@ -6,6 +6,7 @@ namespace KORD\Helper;
  * Helps to handle $_SERVER superglobal array
  *
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class ServerSrc
 {

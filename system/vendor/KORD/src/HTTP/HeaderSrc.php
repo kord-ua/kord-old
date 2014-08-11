@@ -16,6 +16,7 @@ use KORD\Response as KResponse;
  * function available within the PECL HTTP library.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class HeaderSrc extends \ArrayObject
 {

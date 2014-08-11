@@ -8,6 +8,7 @@ use KORD\Validation\Hostname;
 
 /**
  * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class HostnameSrc extends RuleAbstract
 {

@@ -5,6 +5,8 @@ namespace KORD\Crypt;
 /**
  * The Hash library provides one-way encryption of text and binary strings
  * using one of the supported algorithms
+ * 
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class HashSrc
 {

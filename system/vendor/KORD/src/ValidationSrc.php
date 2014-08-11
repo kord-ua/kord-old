@@ -11,6 +11,7 @@ use KORD\Validation\RuleAbstract;
  * Array and variable validation.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class ValidationSrc implements \ArrayAccess
 {

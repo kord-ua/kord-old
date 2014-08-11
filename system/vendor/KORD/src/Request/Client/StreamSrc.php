@@ -17,6 +17,7 @@ use KORD\Response;
  *       \KORD\Request\Client\External::$client = '\KORD\Request\Client\Stream';
  *
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  * @uses       [PHP Streams](http://php.net/manual/en/book.stream.php)
  */
 class StreamSrc extends \KORD\Request\Client\External

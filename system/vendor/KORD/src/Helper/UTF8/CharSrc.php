@@ -5,6 +5,7 @@ namespace KORD\Helper\UTF8;
 /**
  * @copyright  (c) 2007–2014 Kohana Team
  * @copyright  (c) 2005 Harry Fuecks
+ * @copyright  (c) 2014 Andriy Strepetov
  * @license    http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
  */
 class CharSrc

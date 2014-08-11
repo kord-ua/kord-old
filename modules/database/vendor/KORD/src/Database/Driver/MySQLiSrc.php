@@ -9,6 +9,8 @@ use KORD\Profiler;
 
 /**
  * MySQLi database connection driver.
+ * 
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class MySQLiSrc extends \KORD\Database
 {

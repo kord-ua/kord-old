@@ -6,6 +6,7 @@ namespace KORD\Database;
  * Database result wrapper.  See [Results](/database/results) for usage and examples.
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 abstract class ResultSrc implements \Countable, \Iterator, \SeekableIterator, \ArrayAccess
 {

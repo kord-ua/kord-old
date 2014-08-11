@@ -13,6 +13,7 @@ use KORD\Config;
  * Any modifications to configuration items should be done through an instance of this object
  * 
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class GroupSrc extends \ArrayObject
 {

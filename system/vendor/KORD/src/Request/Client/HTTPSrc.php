@@ -17,6 +17,7 @@ use KORD\Response;
  *       // In application bootstrap
  *       \KORD\Request\Client\External::$client = '\KORD\Request\Client\HTTP';
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  * @uses       [PECL HTTP](http://php.net/manual/en/book.http.php)
  */
 class HTTPSrc extends \KORD\Request\Client\External

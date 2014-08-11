@@ -11,6 +11,8 @@ use KORD\Helper\Arr;
  * Uses KORD i18n files, the code is a slightly modified version of `Kohana_I18n` class.
 
  * @copyright  (c) 2012 Korney Czukowski
+ * @copyright  (c) 2014 Andriy Strepetov
+ * @license    MIT License
  */
 class FileSrc implements ReaderInterface
 {

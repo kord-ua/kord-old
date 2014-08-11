@@ -8,6 +8,7 @@ use KORD\Helper\Cookie;
  * Native PHP session class.
  *
  * @copyright  (c) 2007–2014 Kohana Team
+ * @copyright  (c) 2014 Andriy Strepetov
  */
 class NativeSrc extends \KORD\Session
 {

@@ -2,9 +2,8 @@
 /**
  * Czech sample translations
  * 
- * @package    I18n_Plural
- * @author     Korney Czukowski
  * @copyright  (c) 2011 Korney Czukowski
+ * @copyright  (c) 2014 Andriy Strepetov
  * @license    MIT License
  */
 return array(
