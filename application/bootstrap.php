@@ -75,30 +75,6 @@ if (isset($_SERVER['KORD_ENV'])) {
 }
 
 /**
- * Set cookie salt
- * 
- * IMPORTANT: Change the salt for every new application!!!
- */
-\KORD\Helper\Cookie::$salt = 'testsalt';
-
-/**
- * Init default Encrypt instance
- * 
- * IMPORTANT: Change the key for every new application!!!
- */
-\KORD\Crypt\Encrypt::setInstance(null, ['key' => 'foobarkey']);
-
-/**
- * Init default Hash instance
- */
-\KORD\Crypt\Hash::setInstance(null, []);
-
-/**
- * Init default Session instance
- */
-\KORD\Session::setInstance(null, null, []);
-
-/**
  * Initialize KORD, setting the default options.
  *
  * The following options are available:
@@ -137,6 +113,35 @@ if (isset($_SERVER['KORD_ENV'])) {
  * Set the default language
  */
 \KORD\Core::$i18n->lang('en-us');
+
+/**
+ * Set cookie salt
+ * 
+ * IMPORTANT: Change the salt for every new application!!!
+ */
+\KORD\Helper\Cookie::$salt = 'testsalt';
+
+/**
+ * Init default Encrypt instance
+ * 
+ * IMPORTANT: Change the key for every new application!!!
+ */
+\KORD\Crypt\Encrypt::setInstance(null, ['key' => 'foobarkey']);
+
+/**
+ * Init default Hash instance
+ */
+\KORD\Crypt\Hash::setInstance(null, []);
+
+/**
+ * Init default PasswordHash instance
+ */
+\KORD\Crypt\PasswordHash::setInstance(null, ['type' => 'bcrypt']);
+
+/**
+ * Init default Session instance
+ */
+\KORD\Session::setInstance(null, null, []);
 
 /**
  * Enable modules. Modules are referenced by a relative or absolute path.
