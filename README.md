@@ -26,6 +26,9 @@ Support: http://forum.kordframework.org
 #### Num (KORD\Helper\Num)
 * `ordinal(...)` and `round(...)` methods are deprecated and removed
 
+#### Random (KORD\Helper\Random)
+* Allows to generate random bytes, strings, integers, floats and booleans using OpenSSL or Mcrypt
+
 #### Server (KORD\Helper\Server)
 * Contains methods to handle $_SERVER array
 
@@ -47,6 +50,10 @@ Thus, multiple translators can be used within one application.
 
 #### Hash (KORD\Crypt\Hash)
 * Keyed/non-keyed hashes
+* Multiple instances are supported like in KORD\Crypt\Encrypt
+
+#### PasswordHash
+* Bcrypt (Blowfish), PBKDF2 and hash_hmac password hashing mechanisms are supported
 * Multiple instances are supported like in KORD\Crypt\Encrypt
 
 ### Exception (KORD\Exception)
@@ -77,6 +84,11 @@ Thus, multiple translators can be used within one application.
 * Initialized routes are now being stored in a separate class (repository)
 * Routes do not contain `directory` param (see KORD\Request)
 
+### Security
+
+#### XSS (KORD\Security\XSS) (is a part of HTMLPurifier module)
+* Allows to remove XSS (and broken HTML) from text or array of strings using HTMLPurifier module
+
 ### Session (KORD\Session)
 * Basic session fixation protection and session hijacking protection
 * When session id expires (session fixation protection) old session is still available for 30 seconds e.g. for ajax calls
@@ -92,6 +104,10 @@ Thus, multiple translators can be used within one application.
 ### Database
 * MySQL driver is deprecated and removed. PDO and MySQLi drivers are available.
 * `list_tables` and `list_columns` methods are deprecated and removed as they are not supported by PDO
+
+### HTMLPurifer
+* Uses [HTMLPurifier](http://htmlpurifier.org/)
+* Multiple HTMLPurifer instances are supported
 
 ### ORM
 * Table columns are now being cached

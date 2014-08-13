@@ -444,8 +444,8 @@ namespace KORD {
                 } else {
                     // This module is invalid, remove it
                     throw new Exception('Attempted to load an invalid or missing module \'{module}\' at \'{path}\'', [
-                'module' => $name,
-                'path' => Debug::path($path),
+                        'module' => $name,
+                        'path' => Debug::path($path),
                     ]);
                 }
             }
@@ -460,6 +460,10 @@ namespace KORD {
             Core::$modules = $modules;
 
             foreach (Core::$modules as $path) {
+                // default PSR-4 autoloader for classes
+                Core::$autoloader->addNamespace('KORD', $path . 'vendor' . DS . 'KORD' . DS . 'application', true);
+                Core::$autoloader->addNamespace('KORD', $path . 'vendor' . DS . 'KORD' . DS . 'src', true);
+                
                 $init = $path . 'init' . EXT;
 
                 if (is_file($init)) {
