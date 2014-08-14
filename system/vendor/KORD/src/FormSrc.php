@@ -25,7 +25,7 @@ class FormSrc
     
     public function __construct()
     {
-        $this->addArea(null, new Area());
+        $this->addArea(new Area(null));
     }
     
     public function getLanguages()
@@ -53,16 +53,16 @@ class FormSrc
         return $this->areas;
     }
 
-    public function addArea($name, Area $area, $sort = null)
+    public function addArea(Area $area, $sort = null)
     {
-        $area->setName($name)->setLanguages($this->getLanguages());
+        $area->setLanguages($this->getLanguages());
         
         if (!is_null($sort)) {
             $this->areas = array_slice($this->areas, 0, $sort, true) +
-                    [$name => $area] +
+                    [$area->getName() => $area] +
                     array_slice($this->areas, $sort, null, true);
         } else {
-            $this->areas[$name] = $area;
+            $this->areas[$area->getName()] = $area;
         }
         
         return $this;
@@ -132,9 +132,6 @@ class FormSrc
                 foreach ($area->getElements() as $element) {
                     if ($element_errors = Arr::get($errors, $element->getName())) {
                         $element->setErrors($element_errors);
-                        /*if ($element->name === 'csrf_token') {
-                            $messages[] = ['error', 'validation.token_expired'];
-                        }*/
                     }
                 }
             }

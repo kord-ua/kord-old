@@ -36,6 +36,11 @@ class AreaSrc
      */
     protected $elements = [];
     
+    public function __construct($name)
+    {
+        $this->setName($name);
+    }
+    
     public function getLanguages()
     {
         return $this->languages;
@@ -93,16 +98,16 @@ class AreaSrc
         return $this->elements;
     }
     
-    public function addElement($name, Element $element, $sort = null)
+    public function addElement(Element $element, $sort = null)
     {
-        $element->setName($name)->setLanguages($this->getLanguages());
+        $element->setLanguages($this->getLanguages());
         
         if (!is_null($sort)) {
             $this->elements = array_slice($this->elements, 0, $sort, true) +
-                    [$name => $element] +
+                    [$element->getName() => $element] +
                     array_slice($this->elements, $sort, null, true);
         } else {
-            $this->elements[$name] = $element;
+            $this->elements[$element->getName()] = $element;
         }
         
         return $this;

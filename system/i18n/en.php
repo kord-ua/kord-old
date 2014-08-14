@@ -124,6 +124,9 @@ return [
         'creditcardChecksum' => "':field' seems to contain an invalid checksum",
         'creditcardService' => "':field' seems to be an invalid credit card number",
         'creditcardServiceFailure' => "An exception has been raised while validating ':field'",
+        // CSRF
+        'csrfInvalid' => "Invalid type given. String expected",
+        'csrfInvalidToken' => "The form submitted did not originate from the expected site",
         // Date
         'dateInvalidDate' => "':field' does not appear to be a valid date",
         'dateInvalid' => "Invalid type given. String, integer, array or DateTime expected",

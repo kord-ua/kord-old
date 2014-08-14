@@ -86,6 +86,10 @@ Thus, multiple translators can be used within one application.
 
 ### Security
 
+#### CSRF (KORD\Security\CSRF)
+* Allows to generate multiple tokens to avoid form submission concurrency
+* KORD\Form\CSRF element can be used for HTML output and KORD\Validation\CSRF - for token validation
+
 #### XSS (KORD\Security\XSS) (is a part of HTMLPurifier module)
 * Allows to remove XSS (and broken HTML) from text or array of strings using HTMLPurifier module
 
@@ -107,7 +111,7 @@ Thus, multiple translators can be used within one application.
 
 ### HTMLPurifer
 * Uses [HTMLPurifier](http://htmlpurifier.org/)
-* Multiple HTMLPurifer instances are supported
+* Multiple HTMLPurifier instances are supported
 
 ### ORM
 * Table columns are now being cached
